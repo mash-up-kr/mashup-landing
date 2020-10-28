@@ -1,0 +1,16 @@
+@import "variables";
+@import "mixin";
+
+.Container {
+  max-width: $page-max-width;
+
+  .sections {
+    position: relative;
+    overflow: visible;
+  }
+
+  @include mobile {
+    max-width: 375px;
+    overflow: visible;
+  }
+}
