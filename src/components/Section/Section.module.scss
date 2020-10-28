@@ -1,0 +1,29 @@
+@import "variables";
+
+.Container {
+  width: 100%;
+  padding: 160px 0 120px;
+}
+
+.HeaderSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.Title {
+  font-size: $section-title-font-size;
+  color: $page-text-first-color;
+  font-weight: bold;
+  text-align: center;
+}
+
+.SubTitle {
+  margin-top: 24px;
+  font-size: $section-subTitle-font-size;
+  color: $page-text-second-color;
+  line-height: 1.7;
+  font-weight: normal;
+  text-align: center;
+}

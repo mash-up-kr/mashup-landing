@@ -4,3 +4,12 @@ body {
   background: $page-bg-first-color;
   color: $page-text-first-color;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
