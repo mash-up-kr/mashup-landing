@@ -1,1 +1,1 @@
-export { default } from "../views/MainPage/MainPage";
+export { default } from "@views/MainPage";

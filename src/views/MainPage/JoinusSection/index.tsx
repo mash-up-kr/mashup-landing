@@ -1,0 +1,20 @@
+import React from 'react';
+import Section from '@components/Section/Section';
+
+interface Props {};
+
+const JoinusSection: React.FC<Props> = () => (
+  <Section
+    title='매쉬업에서 같이 놀자!'
+    subTitle={ (
+      <>
+        개발에 목 마르고 디자인에 허기진 당신!<br />
+        매쉬업에서 재미있는 프로젝트 같이 안할래요?
+      </>
+    ) }
+  >
+    호우호우
+  </Section>
+);
+
+export default JoinusSection;

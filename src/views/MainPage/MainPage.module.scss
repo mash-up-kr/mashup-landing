@@ -2,13 +2,4 @@
 @import "mixin";
 
 .Container {
-  .sections {
-    position: relative;
-    overflow: visible;
-  }
-
-  @include mobile {
-    max-width: 375px;
-    overflow: visible;
-  }
 }

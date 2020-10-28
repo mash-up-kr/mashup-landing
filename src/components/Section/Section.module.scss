@@ -1,8 +1,18 @@
 @import "variables";
+@import "mixin";
 
 .Container {
   width: 100%;
-  padding: 160px 0 120px;
+  padding: 160px 16px 120px;
+
+
+  @include mobile {
+    padding: 100px 16px 80px;
+  }
+
+  @include iphone {
+    padding: 56px 16px 44px;
+  }
 }
 
 .HeaderSection {
@@ -17,6 +27,17 @@
   color: $page-text-first-color;
   font-weight: bold;
   text-align: center;
+
+  @include mobile {
+    font-size: $section-title-mobile-font-size;
+    line-height: 1.35;
+  }
+
+  @include iphone {
+    font-size: $section-title-iphone-font-size;
+    text-align: left;
+    line-height: 1.5;
+  }
 }
 
 .SubTitle {
@@ -26,4 +47,17 @@
   line-height: 1.7;
   font-weight: normal;
   text-align: center;
+
+  @include mobile {
+    margin-top: 20px;
+    font-size: $section-subTitle-mobile-font-size;
+    line-height: 1.725;
+  }
+
+  @include iphone {
+    margin-top: 16px;
+    font-size: $section-subTitle-iphone-font-size;
+    text-align: left;
+    line-height: 1.75;
+  }
 }
