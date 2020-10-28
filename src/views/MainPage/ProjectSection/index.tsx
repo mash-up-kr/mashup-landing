@@ -1,7 +1,24 @@
 import React from 'react';
 import Section from '@components/Section/Section';
+import S from './styles.module.scss';
+
+import IC_FOLDER from '@resources/svg/icon_folder.svg';
+import IC_GITHUB from '@resources/svg/icon_github.svg';
+import Link from 'next/link';
 
 interface Props {};
+
+const PROJECT_LIST = [
+  {
+    label: 'behance',
+    img: IC_FOLDER,
+    link: 'https://www.behance.net/Mash-Up',
+  }, {
+    label: 'github',
+    img: IC_GITHUB,
+    link: 'https://github.com/eastroots92',
+  }
+]
 
 const ProjectSection: React.FC<Props> = () => (
   <Section
@@ -13,7 +30,22 @@ const ProjectSection: React.FC<Props> = () => (
       </>
     ) }
   >
-    호우호우
+    <div className={ S.Container }>
+      {
+        PROJECT_LIST.map(({ label, img, link }) => (
+          <li className={ S.ItemContainer }>
+            <Link href={ link } key={ label }>
+              <a className={ S.ItemWrap } target='_blank' rel='noreferrer'>
+                <div className={ S.ItemIcon }>
+                  <img  src={ img } alt={ label } />
+                </div>
+                <p className={ S.Label }> { label } </p>
+              </a>
+            </Link>
+          </li>
+        ))
+      }
+    </div>
   </Section>
 );
 

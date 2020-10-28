@@ -9,7 +9,12 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, p {
+h1, h2, p, ul, ol, li {
   margin: 0;
   padding: 0;
+  border: 0 none;
+}
+
+ul, ol, li {
+  list-style: none;
 }

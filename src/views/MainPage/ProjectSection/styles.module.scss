@@ -1,0 +1,79 @@
+@import "variables";
+@import "mixin";
+
+.Container {
+  display: flex;
+  padding: 0 10%;
+
+  @include mobile {
+    padding: 0 5%;
+  }
+
+  @include iphone {
+    padding: 0 0;
+  }
+}
+
+.ItemContainer {
+  width: 100%;
+  padding: 300px 0 254px;
+
+  @include mobile {
+    padding: 250px 0 210px;
+  }
+
+  @include iphone {
+    padding: 190px 0 175px;
+  }
+}
+
+.ItemWrap {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ItemIcon {
+  width: 200px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > img {
+    width: 100%;
+  }
+
+  @include mobile {
+    width: 150px;
+    height: 120px;
+  }
+
+  @include iphone {
+    width: 96px;
+    height: 80px;
+  }
+}
+
+.Label {
+  font-family: $gilroy-font;
+  font-size: 20px;
+  font-weight: 800;
+  color: #e5e5e5;
+  margin-top: 28px;
+  text-align: center;
+
+  @include mobile {
+    font-size: 18px;
+    margin-top: 22px;
+  }
+
+  @include iphone {
+    font-size: 16px;
+    margin-top: 16px;
+    color: $page-text-first-color;
+  }
+}
