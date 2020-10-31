@@ -1,10 +1,20 @@
 @import "variables";
+@import "mixin";
 
 .Container {
   width: 100%;
   margin-top: 68px;
   display: flex;
   justify-content: center;
+
+  @include mobile {
+    margin-top: 50px;
+  }
+
+  @include iphone {
+    margin-top: 32px;
+    justify-content: flex-start;
+  }
 }
 
 .Label {
@@ -20,6 +30,20 @@
     text-shadow: 0 0 1px $select-button-focus-color, 0 0 1px $select-button-focus-color;
     color: $select-button-focus-color;
   }
+
+  @include mobile {
+    font-size: 24px;
+    padding: 0 13px;
+  }
+
+  @include iphone {
+    font-size: 16px;
+    padding: 0 16px 0 0;
+  }
+
+  @include iphoneSE {
+    font-size: 14px;
+  }
 }
 
 .SelectedLabel {
@@ -29,4 +53,18 @@
   letter-spacing: 1.12px;
   padding: 0 18px;
   text-align: center;
+
+  @include mobile {
+    font-size: 24px;
+    padding: 0 13px;
+  }
+
+  @include iphone {
+    font-size: 16px;
+    padding: 0 16px 0 0;
+  }
+
+  @include iphoneSE {
+    font-size: 14px;
+  }
 }

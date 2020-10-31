@@ -6,17 +6,17 @@ export enum TEAM {
   IOS = 'iOS',
 };
 
-
-export interface TeamTalk {
+export interface TalkItem {
   side: 'start' | 'end';
-  commentType: 'img' | 'text';
+  commentType: 'img' | 'text' | 'link';
   comment: any;
+  link?: string;
 }
 
 const { UXUI, BACKEND, WEB, ANDROID, IOS } = TEAM;
 export const TEAM_LIST = [ UXUI, BACKEND, WEB, ANDROID, IOS ];
 
-export const TEAM_TALK_LIST: { [key: string]: TeamTalk[] } = {
+export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
   [UXUI]: [
     {
       side: 'start',
@@ -31,7 +31,7 @@ export const TEAM_TALK_LIST: { [key: string]: TeamTalk[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: '저희는 포트폴리오부터 아티클, 웹 스터디 등 💪 디자인 벌크업을 위한 다양한 스터디를 진행하고 있어요. 📚 Full stack 디자이너들이 모여 관심있는 디자인 이슈, 트렌드에 관한 정보도 공유하고 있는데요. Mash Up의 UXUI 디자인팀은, 개인의 성장을 적극적으로 응원한답니다! 🔥🔥',
+      comment: '저희는 포트폴리오부터 아티클, 웹 스터디 등 💪<br/>디자인 벌크업을 위한 다양한 스터디를 진행하고 있어요.<br/>📚 Full stack 디자이너들이 모여 관심있는 디자인 이슈, 트렌드에 관한 정보도 공유하고 있는데요.<br/>Mash Up의 UXUI 디자인팀은, 개인의 성장을 적극적으로 응원한답니다! 🔥🔥',
     },
     {
       side: 'end',
@@ -53,7 +53,7 @@ export const TEAM_TALK_LIST: { [key: string]: TeamTalk[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: '스프링팀은 ‘왜 WHY’ 에 집중하고 있습니다. ‘왜 이 기술을 사용하는지’ 에 대한 답을 찾기 위해선 기본기가 중요한 요소로 자리매김하고 있습니다. 기본기를 탄탄하게 쌓아올리는 것이 생각보다 어렵다는 사실을 아는 당신! 스프링 팀과 함께 성장해봐요!!!',
+      comment: '스프링팀은 ‘왜 WHY’ 에 집중하고 있습니다.<br/>‘왜 이 기술을 사용하는지’ 에 대한 답을 찾기 위해선 기본기가 중요한 요소로 자리매김하고 있습니다.<br/>기본기를 탄탄하게 쌓아올리는 것이 생각보다 어렵다는 사실을 아는 당신! 스프링 팀과 함께 성장해봐요!!!',
     },
     {
       side: 'end',
@@ -83,7 +83,7 @@ export const TEAM_TALK_LIST: { [key: string]: TeamTalk[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: "노드팀의 스터디 방식은 빠르게 기술 서적을 학습하여 내가 '알고 있다'를 꾸준히 증명합니다. 프로젝트 진행 역시, 빠르게 서버를 배포하여 서비스가 올바르게 나아가고 있는지 꾸준히 증명해가는 시간이 되기를 바랍니다!",
+      comment: "노드팀의 스터디 방식은 빠르게 기술 서적을 학습하여 내가 '알고 있다'를 꾸준히 증명합니다.<br/>프로젝트 진행 역시, 빠르게 서버를 배포하여 서비스가 올바르게 나아가고 있는지 꾸준히 증명해가는 시간이 되기를 바랍니다!",
     },
     {
       side: 'end',
@@ -155,11 +155,45 @@ export const TEAM_TALK_LIST: { [key: string]: TeamTalk[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: '저희는 𝑺𝒘𝒊𝒇𝒕를 기반으로 매시업을 수호하고 있는데요.🛡\n' +
-        '현재까지는 𝐖𝐖𝐃𝐂 스터디🎬, 디자인 패턴 스터디🧩, 𝖲𝗐𝗂𝖿𝗍𝖴𝖨 스터디🐦\n' +
-        '그리고 다양한 주제로 발표 세미나를 진행해왔습니다.\n' +
-        '또! 우리 수호자들은 컨퍼런스에도 적극적으로 참여하고, 애플 이벤트도 함께합니다.\n' +
+      comment: '저희는 𝑺𝒘𝒊𝒇𝒕를 기반으로 매시업을 수호하고 있는데요.🛡<br/>' +
+        '현재까지는 𝐖𝐖𝐃𝐂 스터디🎬, 디자인 패턴 스터디🧩, 𝖲𝗐𝗂𝖿𝗍𝖴𝖨 스터디🐦<br/>' +
+        '그리고 다양한 주제로 발표 세미나를 진행해왔습니다.<br/>' +
+        '또! 우리 수호자들은 컨퍼런스에도 적극적으로 참여하고, 애플 이벤트도 함께합니다.<br/>' +
         '우리 수호자들은 매우 도전적이며 💪새로운 수호자는 언제나 환영이라구욧!!!',
+    },
+    {
+      side: 'end',
+      commentType: 'img',
+      comment: '🧵🧵',
     },
   ],
 }
+
+export const JOIN_US_TALK: TalkItem[] = [
+  {
+    side: 'start',
+    commentType: 'text',
+    comment: '좋아!!!!',
+  },
+  {
+    side: 'start',
+    commentType: 'text',
+    comment: '당장 지원하러 갈게요!!!',
+  },
+  {
+    side: 'start',
+    commentType: 'img',
+    comment: '💪🏻',
+  },
+  {
+    side: 'end',
+    commentType: 'img',
+    comment: '🎉',
+  },
+  {
+    side: 'end',
+    commentType: 'link',
+    comment: 'Mash-Up 10기 지원하러 가기!  👉',
+    link: 'https://banksalad.com'
+  },
+];

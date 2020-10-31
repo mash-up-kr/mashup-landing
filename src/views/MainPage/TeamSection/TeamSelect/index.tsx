@@ -1,7 +1,7 @@
 import React from 'react';
 
 import S from './styles.module.scss';
-import { TEAM, TEAM_LIST } from '@constants/team';
+import { TEAM, TEAM_LIST } from '@constants/talk';
 
 interface Props {
   selectedTeam: TEAM,

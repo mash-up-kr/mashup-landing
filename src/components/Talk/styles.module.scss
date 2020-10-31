@@ -1,0 +1,116 @@
+@import "variables";
+@import "mixin";
+
+.Container {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 20%;
+
+  @include tablet {
+    padding: 0 5%;
+  }
+
+  @include mobile {
+    margin-top: 70px;
+  }
+
+  @include iphone {
+    margin-top: 42px;
+    padding: 0;
+  }
+}
+
+.TalkWrap {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+
+  @include mobile {
+    margin-bottom: 54px;
+  }
+
+  @include iphone {
+    margin-bottom: 48px;
+  }
+}
+
+.EndSide {
+  justify-content: flex-end;
+  margin-bottom: 24px;
+
+  @include mobile {
+    margin-bottom: 16px;
+  }
+
+  @include iphone {
+    margin-bottom: 8px;
+  }
+}
+
+.EndSideImg {
+  margin-top: -32px;
+  margin-bottom: 0;
+
+  @include mobile {
+    margin-top: -24px;
+  }
+
+  @include iphone {
+    margin-top: -16px;
+  }
+}
+
+.TalkComment {
+  max-width: 466px;
+  border-radius: 40px;
+  background: $talk-start-side;
+  word-break: normal;
+  font-size: 18px;
+  color: $page-text-second-color;
+  padding: 24px 32px;
+  line-height: 1.5;
+
+  @include mobile {
+    max-width: 340px;
+    font-size: 16px;
+    padding: 18px 26px;
+  }
+
+  @include iphone {
+    max-width: 272px;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+}
+
+.TalkEndSide {
+  background: #0078ff;
+}
+
+.TalkCommentImg {
+  background: transparent;
+  border-radius: 0;
+  font-size: 120px;
+  padding: 0;
+
+  @include mobile {
+    font-size: 90px;
+  }
+
+  @include iphone {
+    font-size: 65px;
+  }
+}
+
+.TalkCommentLink {
+  cursor: pointer;
+  transition: transform ease-in 200ms;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}

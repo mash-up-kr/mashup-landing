@@ -1,5 +1,7 @@
 import React from 'react';
 import Section from '@components/Section/Section';
+import { Talk } from '@components/Talk';
+import { JOIN_US_TALK } from '@constants/talk';
 
 interface Props {};
 
@@ -13,7 +15,7 @@ const JoinusSection: React.FC<Props> = () => (
       </>
     ) }
   >
-    호우호우
+    <Talk talks={ JOIN_US_TALK } />
   </Section>
 );
 
