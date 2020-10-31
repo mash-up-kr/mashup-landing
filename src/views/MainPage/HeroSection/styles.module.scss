@@ -1,0 +1,69 @@
+@import "variables";
+@import "mixin";
+
+.Container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TitleWrap {
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    margin-top: 25vh;
+  }
+
+  @include iphone {
+    margin-top: 20vh;
+    flex-direction: column-reverse;
+  }
+}
+
+.SubTitle {
+  font-size: 28px;
+  font-weight: 500;
+  color: $page-text-second-color;
+  text-align: center;
+
+  @include tablet {
+    font-size: 22px;
+  }
+
+  @include iphone {
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.Title {
+  margin-top: 8px;
+  font-size: 88px;
+  font-family: $gilroy-font;
+  font-weight: 800;
+  color: $page-text-first-color;
+  text-align: center;
+
+  @include tablet {
+    font-size: 68px;
+  }
+
+  @include iphone {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-top: 0;
+  }
+}
+
+.IsMobile {
+  display: none;
+
+  @include iphone {
+    display: block;
+  }
+}
