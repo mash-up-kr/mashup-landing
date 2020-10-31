@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixin";
+
+.Container {
+  width: 100%;
+  padding: 0 15%;
+  margin-top: 138px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+
+  @include tablet {
+    padding: 0 5%;
+  }
+
+  @include iphone {
+    padding: 0 0;
+  }
+}

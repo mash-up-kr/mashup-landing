@@ -1,0 +1,70 @@
+@import "variables";
+@import "mixin";
+
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @include mobile {
+
+  }
+
+  @include iphone {
+  }
+}
+
+.Title {
+  font-family: $gilroy-font;
+  font-size: 24px;
+  font-weight: 800;
+  color: $page-text-second-color;
+  margin-bottom: 8px;
+}
+
+.ContentsWrap {
+  display: grid;
+  grid-column-gap: 6px;
+  grid-row-gap: 3px;
+}
+
+.Image {
+  width: 100%;
+  max-height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+
+  @include pc {
+    max-height: 140px;
+  }
+
+  @include tablet {
+    max-height: 120px;
+  }
+
+  @include mobile {
+    max-height: 100px;
+  } 
+}
+
+.OneImage {
+  grid-auto-columns: 1fr 1fr;
+}
+
+.TwoImages {
+  grid-auto-columns: 1fr 2fr;
+}
+
+.ThreeImages {
+  grid-auto-columns: 2fr 2fr;
+
+  & > .Image:nth-child(1) {
+    grid-column: 1 / span 2;
+  }
+}
+
+.Four-images {
+  grid-auto-columns: 2fr 2fr;
+}

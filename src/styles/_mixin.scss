@@ -1,5 +1,11 @@
 @import "variables";
 
+@mixin pc {
+  @media (max-width: $pc) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (max-width: $tablet) {
     @content;

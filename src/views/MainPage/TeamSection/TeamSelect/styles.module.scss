@@ -18,6 +18,7 @@
 }
 
 .Label {
+  cursor: pointer;
   font-size: 32px;
   font-weight: 500;
   color: $select-button-color;
@@ -47,6 +48,7 @@
 }
 
 .SelectedLabel {
+  cursor: pointer;
   font-size: 32px;
   text-shadow: 0 0 1px $select-button-focus-color, 0 0 1px $select-button-focus-color;
   color: $select-button-focus-color;

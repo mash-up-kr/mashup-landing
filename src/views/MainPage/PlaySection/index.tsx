@@ -1,8 +1,24 @@
 import React from 'react';
 import Section from '@components/Section/Section';
+import { ImageGridView } from '@components/ImageGridView';
+
+import IMG_TEAM_1 from '@resources/images/team_1.jpg';
+import IMG_TEAM_2 from '@resources/images/team_2.jpg';
+import IMG_TEAM_3 from '@resources/images/team_3.jpg';
+import IMG_WEBINAR_1 from '@resources/images/webinar_1.jpg';
+import IMG_WEBINAR_2 from '@resources/images/webinar_2.jpg';
+import IMG_WEBINAR_3 from '@resources/images/webinar_3.jpg';
+
+import S from './styles.module.scss';
 
 interface Props {};
 
+const IMAGES = {
+  TEAM_STUDY: [IMG_TEAM_1, IMG_TEAM_2, IMG_TEAM_3],
+  WEBINAR: [IMG_WEBINAR_1, IMG_WEBINAR_2, IMG_WEBINAR_3],
+  HACKATHON: [IMG_TEAM_1, IMG_TEAM_2, IMG_TEAM_3],
+}
+const { TEAM_STUDY, WEBINAR, HACKATHON } = IMAGES;
 const PlaySection: React.FC<Props> = () => (
   <Section
     title='우리가 매쉬업에서 노는 방식!'
@@ -13,7 +29,11 @@ const PlaySection: React.FC<Props> = () => (
       </>
     ) }
   >
-    호우호우
+    <article className={ S.Container }>
+      <ImageGridView title='team study' images={ TEAM_STUDY } />
+      <ImageGridView title='webinar' images={ WEBINAR } />
+      <ImageGridView title='hackathon' images={ HACKATHON } />
+    </article>
   </Section>
 );
 
