@@ -27,11 +27,13 @@ const PlaySection: React.FC<Props> = () => {
     dots: true,
     infinite: false,
     centerMode: true,
+    centerPadding: '16px',
     speed: 500,
   }
 
   return (
     <Section
+      hasPadding={ false }
       title='우리가 매쉬업에서 노는 방식!'
       subTitle={ (
         <>

@@ -15,11 +15,29 @@
   }
 }
 
+.ContainerWithoutPadding {
+  width: 100%;
+  padding: 160px 0 120px;
+
+
+  @include mobile {
+    padding: 100px 0 80px;
+  }
+
+  @include iphone {
+    padding: 56px 0 44px;
+  }
+}
+
 .HeaderSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+}
+
+.AddPadding {
+  padding: 0 16px;
 }
 
 .Title {
