@@ -1,0 +1,32 @@
+@import "variables";
+
+.Container {
+  width: 100%;
+  margin-top: 68px;
+  display: flex;
+  justify-content: center;
+}
+
+.Label {
+  font-size: 32px;
+  font-weight: 500;
+  color: $select-button-color;
+  letter-spacing: 1.12px;
+  transition: text-shadow ease-in 200ms, color ease-in 200ms;
+  text-align: center;
+  padding: 0 18px;
+
+  &:hover {
+    text-shadow: 0 0 1px $select-button-focus-color, 0 0 1px $select-button-focus-color;
+    color: $select-button-focus-color;
+  }
+}
+
+.SelectedLabel {
+  font-size: 32px;
+  text-shadow: 0 0 1px $select-button-focus-color, 0 0 1px $select-button-focus-color;
+  color: $select-button-focus-color;
+  letter-spacing: 1.12px;
+  padding: 0 18px;
+  text-align: center;
+}
