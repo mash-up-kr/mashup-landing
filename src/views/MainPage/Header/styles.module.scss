@@ -1,0 +1,121 @@
+@import "variables";
+@import "mixin";
+
+$offset-y: 50px;
+
+.Header {
+  box-sizing: content-box;
+  position: fixed;
+  top: -$offset-y;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin: 0 auto;
+  padding: $offset-y 48px 0 48px;
+  background-color: $page-bg-first-color;
+  z-index: 1101;
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+  }
+
+  .LogoImage + .LogoImage {
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 600;
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .MenuItem {
+    font-size: 18px;
+    font-weight: bold;
+    color: $page-text-first-color;
+    text-decoration: none;
+  }
+
+  .menuBtn {
+    display: none;
+  }
+
+  .MenuButton {
+    display: inline-block;
+    padding: 0 24px;
+    line-height: 48px;
+    border-radius: 28px;
+    background: $talk-end-side;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: $page-text-first-color;
+    text-decoration: none;
+    transition: transform ease-in 200ms;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  @include mobile {
+    top: -$offset-y;
+    height: 60px;
+    padding: $offset-y 20px 0 20px;
+
+    .logo {
+      width: 55px;
+    }
+
+    .menuBtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+
+      .bar {
+        width: 21px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: white;
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .LogoImage:first-child {
+      width: 24px;
+      height: 24px;
+    }
+
+    .LogoImage + .LogoImage {
+      display: none;
+    }
+
+    .MenuItem {
+      display: none;
+    }
+
+    .MenuButton {
+      line-height: 42px;
+      font-size: 14px;
+      padding: 0 22px;
+      background: $page-bg-second-color;
+    }
+  }
+}

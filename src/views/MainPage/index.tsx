@@ -5,11 +5,13 @@ import TeamSection from '@views/MainPage/TeamSection';
 import ProjectSection from '@views/MainPage/ProjectSection';
 import JoinusSection from '@views/MainPage/JoinusSection';
 import HeroSection from '@views/MainPage/HeroSection';
+import Header from '@views/MainPage/Header';
 
 interface Props {}
 
 const MainPage: React.FC<Props> = () => (
   <div className={ S.Container }>
+    <Header />
     <HeroSection />
     <PlaySection />
     <TeamSection />
