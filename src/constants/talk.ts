@@ -7,9 +7,9 @@ export enum TEAM {
 };
 
 export interface TalkItem {
-  side: 'start' | 'end';
-  commentType: 'img' | 'text' | 'link';
-  comment: any;
+  side: 'start' | 'end' | 'divide';
+  commentType?: 'img' | 'text' | 'link';
+  comment?: any;
   link?: string;
 }
 
@@ -22,6 +22,9 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'start',
       commentType: 'text',
       comment: '🙂UX/UI팀에 대해 궁금해요!!',
+    },
+    {
+      side: 'divide',
     },
     {
       side: 'end',
@@ -184,6 +187,9 @@ export const JOIN_US_TALK: TalkItem[] = [
     side: 'start',
     commentType: 'img',
     comment: '💪🏻',
+  },
+  {
+    side: 'divide',
   },
   {
     side: 'end',

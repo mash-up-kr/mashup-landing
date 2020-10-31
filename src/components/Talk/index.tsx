@@ -16,30 +16,34 @@ export const Talk: React.FC<Props> = ({ talks }: Props) => {
     <ul className={ S.Container }>
       {
         talks.map(({ commentType, comment, side, link }) => (
-          <li
-            key={ comment }
-            className={ cc([
-              S.TalkWrap,
-              {
-                [S.EndSide]: side === 'end',
-                [S.EndSideImg]: commentType === 'img',
-              }
-            ])}
-          >
-            <p
+          side === 'divide' ? (
+            <div className={ S.Divide } />
+          ) : (
+            <li
+              key={ comment }
               className={ cc([
-                S.TalkComment,
+                S.TalkWrap,
                 {
-                  [S.TalkEndSide]: side === 'end',
-                  [S.TalkCommentImg]: commentType === 'img',
-                  [S.TalkCommentLink]: commentType === 'link',
+                  [S.EndSide]: side === 'end',
+                  [S.EndSideImg]: commentType === 'img',
                 }
-              ]) }
-              onClick={ () => { link && window.open(link, '_blank') } }
-              dangerouslySetInnerHTML={{ __html: comment }}
+              ])}
             >
-            </p>
-          </li>
+              <p
+                className={ cc([
+                  S.TalkComment,
+                  {
+                    [S.TalkEndSide]: side === 'end',
+                    [S.TalkCommentImg]: commentType === 'img',
+                    [S.TalkCommentLink]: commentType === 'link',
+                  }
+                ]) }
+                onClick={ () => { link && window.open(link, '_blank') } }
+                dangerouslySetInnerHTML={{ __html: comment }}
+              >
+              </p>
+            </li>
+          )
         ))
       }
     </ul>

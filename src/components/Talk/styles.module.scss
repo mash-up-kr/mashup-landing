@@ -26,14 +26,26 @@
 .TalkWrap {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 24px;
 
   @include mobile {
-    margin-bottom: 54px;
+    margin-bottom: 16px;
   }
 
   @include iphone {
-    margin-bottom: 48px;
+    margin-bottom: 8px;
+  }
+}
+
+.Divide {
+  margin-bottom: 36px;
+
+  @include mobile {
+    margin-bottom: 38px;
+  }
+
+  @include iphone {
+    margin-bottom: 40px;
   }
 }
 
