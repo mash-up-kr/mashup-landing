@@ -13,6 +13,7 @@
   }
 
   @include iphone {
+    padding: 0 16px;
   }
 }
 
@@ -45,8 +46,8 @@
   }
 
   @include mobile {
-    max-height: 100px;
-  } 
+    max-height: 140px;
+  }
 }
 
 .OneImage {
