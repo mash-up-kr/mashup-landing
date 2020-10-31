@@ -10,6 +10,7 @@ interface Props {
 
 export const TeamSelect: React.FC<Props> = ({ selectedTeam, setTeam }: Props) => (
   <ul className={ S.Container }>
+    <div className={ S.TopShadow } />
     {
       TEAM_LIST.map((team) => (
         <li
@@ -21,5 +22,6 @@ export const TeamSelect: React.FC<Props> = ({ selectedTeam, setTeam }: Props) =>
         </li>
       ))
     }
+    <div className={ S.Shadow } />
   </ul>
 );

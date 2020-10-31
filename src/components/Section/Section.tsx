@@ -25,8 +25,10 @@ const Section: React.FC<Props> = ({
     {
       title && (
         <div className={ cc([S.HeaderSection, { [S.AddPadding]: !hasPadding }])  }>
+          <div className={ S.TopShadow } />
           <h2 className={ S.Title }> { title } </h2>
           <p className={ S.SubTitle }> { subTitle } </p>
+          <div className={ S.Shadow } />
         </div>
       )
     }

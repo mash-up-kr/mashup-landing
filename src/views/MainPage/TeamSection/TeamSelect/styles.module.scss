@@ -6,14 +6,20 @@
   margin-top: 68px;
   display: flex;
   justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 247px;
+  background: $page-bg-first-color;
 
   @include mobile {
     margin-top: 50px;
+    top: 220px;
   }
 
   @include iphone {
     margin-top: 32px;
     justify-content: flex-start;
+    top: 260px;
   }
 }
 
@@ -69,4 +75,22 @@
   @include iphoneSE {
     font-size: 14px;
   }
+}
+
+.TopShadow {
+  position: absolute;
+  width: calc(100% + 32px);
+  height: 20px;
+  left: -16px;
+  top: -20px;
+  background: $page-bg-first-color;
+}
+
+.Shadow {
+  position: absolute;
+  width: calc(100% + 32px);
+  height: 20px;
+  bottom: -20px;
+  left: -16px;
+  background: linear-gradient($page-bg-first-color, #00000000);
 }
