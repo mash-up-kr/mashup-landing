@@ -12,6 +12,7 @@ const TeamSection: React.FC<Props> = () => {
 
   return (
     <Section
+      sectionId='team'
       title='매쉬업의 멋진 팀들을 소개할게!'
       subTitle={ (
         <>

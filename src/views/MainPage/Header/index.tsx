@@ -33,7 +33,7 @@ const Header = () => {
     event.preventDefault();
     const element = document.getElementById(target);
     const { top } = element?.getBoundingClientRect();
-    const offset = pageYOffset - 100;
+    const offset = pageYOffset;
     scrollTo(0, Math.max(offset + top, 0));
   }, []);
 
@@ -47,10 +47,10 @@ const Header = () => {
         <img className={ S.LogoImage } src={ IMG_LOGO_TITLE } alt='매쉬업 로고'/>
       </a>
       <div className={ S.menu }>
-        <a className={ S.MenuItem } href='#'>program</a>
-        <a className={ S.MenuItem } href='#'>team</a>
-        <a className={ S.MenuItem } href='#'>works</a>
-        <a className={ S.MenuButton } href='#'>JOIN US!</a>
+        <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'program') }>program</a>
+        <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'team') }>team</a>
+        <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'works') }>works</a>
+        <a className={ S.MenuButton } href='#' onClick={ (event) => onNavigateTo(event, 'joinus') }>JOIN US!</a>
       </div>
     </motion.div>
   )

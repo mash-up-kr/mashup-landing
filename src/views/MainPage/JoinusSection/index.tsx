@@ -7,6 +7,7 @@ interface Props {};
 
 const JoinusSection: React.FC<Props> = () => (
   <Section
+    sectionId='joinus'
     title='매쉬업에서 같이 놀자!'
     subTitle={ (
       <>

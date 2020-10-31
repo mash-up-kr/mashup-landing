@@ -33,6 +33,7 @@ const PlaySection: React.FC<Props> = () => {
 
   return (
     <Section
+      sectionId='program'
       hasPadding={ false }
       title='우리가 매쉬업에서 노는 방식!'
       subTitle={ (

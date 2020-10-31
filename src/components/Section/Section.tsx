@@ -1,8 +1,10 @@
 import React from 'react';
 import cc from 'classcat';
 import S from './Section.module.scss';
+import { motion } from 'framer-motion';
 
 interface Props {
+  sectionId: string;
   title?: string;
   subTitle?: string | React.ReactNode;
   children: React.ReactNode;
@@ -10,12 +12,16 @@ interface Props {
 }
 
 const Section: React.FC<Props> = ({
+  sectionId,
   title = '',
   subTitle = '',
   hasPadding = true,
   children,
 }: Props) => (
-  <section className={ hasPadding ? S.Container : S.ContainerWithoutPadding }>
+  <motion.section
+    id={ sectionId }
+    className={ hasPadding ? S.Container : S.ContainerWithoutPadding }
+  >
     {
       title && (
         <div className={ cc([S.HeaderSection, { [S.AddPadding]: !hasPadding }])  }>
@@ -25,7 +31,7 @@ const Section: React.FC<Props> = ({
       )
     }
     { children }
-  </section>
+  </motion.section>
 );
 
 export default Section;

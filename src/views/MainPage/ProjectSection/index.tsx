@@ -22,6 +22,7 @@ const PROJECT_LIST = [
 
 const ProjectSection: React.FC<Props> = () => (
   <Section
+    sectionId='works'
     title='우리가 만든 것들 한 번 볼래?'
     subTitle={ (
       <>
