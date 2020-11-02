@@ -11,6 +11,7 @@ function App({Component, pageProps}) {
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
         <meta httpEquiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="google-site-verification" content="a-hPVC09I0wScoLhVLW7E6oqX4KwTc3iK7Ui4unFg6g" />
         <title>Mash Up ⎮ IT 개발 동아리</title>
         <meta
           name="description"
@@ -40,13 +41,6 @@ function App({Component, pageProps}) {
         <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css" rel="stylesheet" type="text/css" />
         <link rel="manifest" href="/manifest.json"/>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1XKDVJD42"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-L1XKDVJD42');
-        </script>
       </Head>
       <Component {...pageProps}/>
     </>

@@ -8,11 +8,14 @@ import HeroSection from '@views/MainPage/HeroSection';
 import Header from '@views/MainPage/Header';
 import Footer from '@views/MainPage/Footer';
 import AOS from 'aos';
+import ReactGA from 'react-ga';
 import 'aos/dist/aos.css'
 
 interface Props {}
 
 const MainPage: React.FC<Props> = () => {
+  ReactGA.initialize('G-L1XKDVJD42');
+
   useEffect(() => {
     AOS.init({
       disable: false,
