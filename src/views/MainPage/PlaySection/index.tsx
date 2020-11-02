@@ -8,6 +8,9 @@ import IMG_TEAM_3 from '@resources/images/team_3.jpg';
 import IMG_WEBINAR_1 from '@resources/images/webinar_1.jpg';
 import IMG_WEBINAR_2 from '@resources/images/webinar_2.jpg';
 import IMG_WEBINAR_3 from '@resources/images/webinar_3.jpg';
+import IMG_HACK_1 from '@resources/images/hack_1.png';
+import IMG_HACK_2 from '@resources/images/hack_2.png';
+import IMG_HACK_3 from '@resources/images/hack_3.png';
 
 import S from './styles.module.scss';
 import Slider from 'react-slick';
@@ -17,7 +20,7 @@ interface Props {};
 const IMAGES = {
   TEAM_STUDY: [IMG_TEAM_1, IMG_TEAM_2, IMG_TEAM_3],
   WEBINAR: [IMG_WEBINAR_1, IMG_WEBINAR_2, IMG_WEBINAR_3],
-  HACKATHON: [IMG_TEAM_1, IMG_TEAM_2, IMG_TEAM_3],
+  HACKATHON: [IMG_HACK_1, IMG_HACK_2, IMG_HACK_3],
 }
 const { TEAM_STUDY, WEBINAR, HACKATHON } = IMAGES;
 
