@@ -83,3 +83,11 @@
     color: $page-text-first-color;
   }
 }
+
+.IsMobile {
+  display: block;
+
+  @include iphone {
+    display: none;
+  }
+}
