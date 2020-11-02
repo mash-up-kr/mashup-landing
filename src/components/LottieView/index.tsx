@@ -17,11 +17,11 @@ export const LottieView = ({
   autoplay = true,
 }: Props) => {
   useEffect(() => {
-    const component = document && document.getElementById(lottieId) as HTMLElement;
+    const component = document.getElementById(lottieId);
 
     const currentLottie = Lottie.loadAnimation({
-      wrapper: component,
-      animType: 'svg',
+      container: component,
+      renderer: 'svg',
       loop,
       autoplay,
       animationData,
