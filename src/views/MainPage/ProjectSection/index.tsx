@@ -28,8 +28,9 @@ const ProjectSection: React.FC<Props> = () => (
     hasPadding={ false }
     subTitle={ (
       <>
-        함께 머리를 맞대어 어려운 난관에도 절대 물러서는 법이 없지!<br className={ S.IsMobile } />
-        매 기수마다 팀을 구성하고, 협업을 통해 프로젝트를 배포해요.
+        { '함께 머리를 맞대어 어려운 난관에도 절대 물러서는 법이 없지!' }
+        <br className={ S.IsMobile } />
+        { ' 매 기수마다 팀을 구성하고, 협업을 통해 프로젝트를 배포해요.' }
       </>
     ) }
   >
