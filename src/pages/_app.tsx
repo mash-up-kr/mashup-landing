@@ -9,7 +9,7 @@ function App({Component, pageProps}) {
     <>
       <Head>
         <meta charSet="UTF-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta httpEquiv="X-UA-Compatible" content="ie=edge"/>
         <meta name="google-site-verification" content="a-hPVC09I0wScoLhVLW7E6oqX4KwTc3iK7Ui4unFg6g" />
         <title>Mash Up ⎮ IT 개발 동아리</title>

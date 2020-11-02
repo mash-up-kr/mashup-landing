@@ -131,6 +131,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'start',
       commentType: 'text',
       comment: '🙂 Android팀은 어떻게 활동하나요?',
+      profile: true,
     },
     {
       side: 'end',
