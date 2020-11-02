@@ -40,14 +40,6 @@ function App({Component, pageProps}) {
         <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css" />
         <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css" rel="stylesheet" type="text/css" />
         <link rel="manifest" href="/manifest.json"/>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1XKDVJD42"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){ dataLayer.push(arguments) }
-          gtag('js', new Date());
-
-          gtag('config', 'G-L1XKDVJD42');
-        </script>
       </Head>
       <Component {...pageProps}/>
     </>

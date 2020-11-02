@@ -8,12 +8,18 @@ import HeroSection from '@views/MainPage/HeroSection';
 import Header from '@views/MainPage/Header';
 import Footer from '@views/MainPage/Footer';
 import AOS from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
+import ReactGA from 'react-ga';
+
 
 interface Props {}
 
 const MainPage: React.FC<Props> = () => {
+
   useEffect(() => {
+    ReactGA.initialize('G-L1XKDVJD42');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     AOS.init({
       disable: false,
       startEvent: 'DOMContentLoaded',
