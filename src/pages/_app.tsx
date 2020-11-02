@@ -11,10 +11,10 @@ function App({Component, pageProps}) {
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
         <meta httpEquiv="X-UA-Compatible" content="ie=edge"/>
-        <title>Mash-up | IT 연합 동아리</title>
+        <title>Mash Up ⎮ IT 개발 동아리</title>
         <meta
           name="description"
-          content="mash-up은 디자이너 개발자, 학생 직장인이 모여 함께 서비스를 만들고 학습하는 IT 동아리 입니다."
+          content="매쉬업은 개발, 디자인에 관심과 열정이 있는 사람들이 모인 단체로 UX/UI Design, Android, iOS, Backend(노드,스프링), Web 총 5개의 팀으로 구성되어 있습니다. 매쉬업에서는 전체모임의 세미나 및 네트워킹을 진행하고 있으며, 이를 통하여 개인의 전문역량과 협업능력을 증대시키고자 합니다."
         />
         <meta
           name="keywords"
@@ -25,14 +25,14 @@ function App({Component, pageProps}) {
         <meta property="og:title" content="Mash-up | IT 연합 동아리" />
         <meta
           property="og:description"
-          content="mash-up은 디자이너 개발자, 학생 직장인이 모여 함께 서비스를 만들고 학습하는 IT 동아리 입니다."
+          content="매쉬업은 개발, 디자인에 관심과 열정이 있는 사람들이 모인 단체로 UX/UI Design, Android, iOS, Backend(노드,스프링), Web 총 5개의 팀으로 구성되어 있습니다. 매쉬업에서는 전체모임의 세미나 및 네트워킹을 진행하고 있으며, 이를 통하여 개인의 전문역량과 협업능력을 증대시키고자 합니다."
         />
         <meta property="og:image" content={ THOMB } />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mash-up | IT 연합 동아리" />
+        <meta name="twitter:title" content="Mash Up ⎮ IT 개발 동아리" />
         <meta
           name="twitter:description"
-          content="mash-up은 디자이너 개발자, 학생 직장인이 모여 함께 서비스를 만들고 학습하는 IT 동아리 입니다."
+          content="매쉬업은 개발, 디자인에 관심과 열정이 있는 사람들이 모인 단체로 UX/UI Design, Android, iOS, Backend(노드,스프링), Web 총 5개의 팀으로 구성되어 있습니다. 매쉬업에서는 전체모임의 세미나 및 네트워킹을 진행하고 있으며, 이를 통하여 개인의 전문역량과 협업능력을 증대시키고자 합니다."
         />
         <link rel='icon' href={ ICON } type='imagge/png'/>
         <link data-react-helmet="true" rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css" />

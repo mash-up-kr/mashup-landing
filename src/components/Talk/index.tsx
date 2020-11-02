@@ -6,45 +6,53 @@ import { TalkItem } from '@constants/talk';
 
 
 interface Props {
+  animation?: boolean;
   talks: TalkItem[];
 };
 
-export const Talk: React.FC<Props> = ({ talks }: Props) => {
-
+export const Talk: React.FC<Props> = ({ animation = false, talks }: Props) => {
 
   return (
     <ul className={ S.Container }>
       {
-        talks.map(({ commentType, comment, side, link }) => (
-          side === 'divide' ? (
-            <div className={ S.Divide } />
-          ) : (
-            <li
-              key={ comment }
-              className={ cc([
-                S.TalkWrap,
-                {
-                  [S.EndSide]: side === 'end',
-                  [S.EndSideImg]: commentType === 'img',
-                }
-              ])}
-            >
-              <p
+        talks.map(({ commentType, comment, side, link }) => {
+          const options = animation ? {
+            ['data-aos']: side === 'end' ? 'zoom-in-left' : 'zoom-in-right',
+            ['data-aos-duration']: '800'
+          } : {}
+
+          return (
+            side === 'divide' ? (
+              <div className={ S.Divide } />
+            ) : (
+              <li
+                key={ comment }
                 className={ cc([
-                  S.TalkComment,
+                  S.TalkWrap,
                   {
-                    [S.TalkEndSide]: side === 'end',
-                    [S.TalkCommentImg]: commentType === 'img',
-                    [S.TalkCommentLink]: commentType === 'link',
+                    [S.EndSide]: side === 'end',
+                    [S.EndSideImg]: commentType === 'img',
                   }
-                ]) }
-                onClick={ () => { link && window.open(link, '_blank') } }
-                dangerouslySetInnerHTML={{ __html: comment }}
+                ])}
+                { ...options }
               >
-              </p>
-            </li>
+                <p
+                  className={ cc([
+                    S.TalkComment,
+                    {
+                      [S.TalkEndSide]: side === 'end',
+                      [S.TalkCommentImg]: commentType === 'img',
+                      [S.TalkCommentLink]: commentType === 'link',
+                    }
+                  ]) }
+                  onClick={ () => { link && window.open(link, '_blank') } }
+                  dangerouslySetInnerHTML={{ __html: comment }}
+                >
+                </p>
+              </li>
+            )
           )
-        ))
+        })
       }
     </ul>
   );

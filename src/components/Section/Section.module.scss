@@ -67,6 +67,8 @@
 }
 
 .Title {
+  position: relative;
+  z-index: 2;
   font-size: $section-title-font-size;
   color: $page-text-first-color;
   font-weight: bold;
@@ -85,6 +87,8 @@
 }
 
 .SubTitle {
+  position: relative;
+  z-index: 2;
   margin-top: 24px;
   font-size: $section-subTitle-font-size;
   color: $page-text-second-color;

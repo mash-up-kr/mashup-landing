@@ -5,6 +5,7 @@ import S from './styles.module.scss';
 import IC_FOLDER from '@resources/svg/icon_folder.svg';
 import IC_GITHUB from '@resources/svg/icon_github.svg';
 import Link from 'next/link';
+import { ImageGridView } from '@components/ImageGridView';
 
 interface Props {};
 
@@ -33,8 +34,12 @@ const ProjectSection: React.FC<Props> = () => (
   >
     <div className={ S.Container }>
       {
-        PROJECT_LIST.map(({ label, img, link }) => (
-          <li className={ S.ItemContainer }>
+        PROJECT_LIST.map(({ label, img, link }, index) => (
+          <li
+            className={ S.ItemContainer }
+            data-aos='fade-left'
+            data-aos-duration={`${(index + 1) * 4}00`}
+          >
             <Link href={ link } key={ label }>
               <a className={ S.ItemWrap } target='_blank' rel='noreferrer'>
                 <div className={ S.ItemIcon }>

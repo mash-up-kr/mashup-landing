@@ -47,9 +47,24 @@ const PlaySection: React.FC<Props> = () => {
       ) }
     >
       <article className={ S.Container }>
-        <ImageGridView title='team study' images={ TEAM_STUDY } />
-        <ImageGridView title='webinar' images={ WEBINAR } />
-        <ImageGridView title='hackathon' images={ HACKATHON } />
+        <ImageGridView
+          title='team study'
+          images={ TEAM_STUDY }
+          dataAos='fade-left'
+          dataAosDuration='600'
+        />
+        <ImageGridView
+          title='webinar'
+          images={ WEBINAR }
+          dataAos='fade-left'
+          dataAosDuration='800'
+        />
+        <ImageGridView
+          title='hackathon'
+          images={ HACKATHON }
+          dataAos='fade-left'
+          dataAosDuration='1000'
+        />
       </article>
       <article className={ S.MobileContainer }>
         <Slider { ...sliderOptions }>

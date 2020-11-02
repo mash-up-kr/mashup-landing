@@ -16,7 +16,7 @@ const JoinusSection: React.FC<Props> = () => (
       </>
     ) }
   >
-    <Talk talks={ JOIN_US_TALK } />
+    <Talk talks={ JOIN_US_TALK } animation={ true } />
   </Section>
 );
 

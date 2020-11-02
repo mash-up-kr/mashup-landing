@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import React from "react";
 
-class FEConf2020Document extends Document {
+class MashUpDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
     return { ...initialProps };
@@ -23,4 +23,4 @@ class FEConf2020Document extends Document {
   }
 }
 
-export default FEConf2020Document;
+export default MashUpDocument;
