@@ -2,4 +2,62 @@
 @import "mixin";
 
 .Container {
+  width: 100%;
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: $page-bg-second-color;
+
+  @include mobile {
+    padding: 44px 0;
+  }
+
+  @include iphone {
+    padding: 24px 0;
+  }
 }
+
+.Logo {
+  width: 144px;
+  height: 38px;
+}
+
+.IconWrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 86px;
+  width: 220px;
+
+  @include mobile {
+    margin-top: 80px;
+  }
+
+  @include iphone {
+    margin-top: 74px;
+  }
+}
+
+.Link {
+  width: 32px;
+  height: 32px;
+}
+
+.Description {
+  margin-top: 32px;
+  font-size: 18px;
+  color: $page-text-second-color;
+  text-align: center;
+
+  @include mobile {
+    margin-top: 28px;
+    font-size: 16px;
+  }
+
+  @include iphone {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+}
+

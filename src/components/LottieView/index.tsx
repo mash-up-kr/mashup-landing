@@ -17,7 +17,7 @@ export const LottieView = ({
   autoplay = true,
 }: Props) => {
   useEffect(() => {
-    const component = document.getElementById(lottieId);
+    const component = document && document.getElementById(lottieId) as HTMLElement;
 
     const currentLottie = Lottie.loadAnimation({
       wrapper: component,

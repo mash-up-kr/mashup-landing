@@ -16,7 +16,7 @@ const PROJECT_LIST = [
   }, {
     label: 'github',
     img: IC_GITHUB,
-    link: 'https://github.com/eastroots92',
+    link: 'https://github.com/mash-up-kr',
   }
 ]
 

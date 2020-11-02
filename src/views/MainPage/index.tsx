@@ -6,6 +6,7 @@ import ProjectSection from '@views/MainPage/ProjectSection';
 import JoinusSection from '@views/MainPage/JoinusSection';
 import HeroSection from '@views/MainPage/HeroSection';
 import Header from '@views/MainPage/Header';
+import Footer from '@views/MainPage/Footer';
 
 interface Props {}
 
@@ -17,6 +18,7 @@ const MainPage: React.FC<Props> = () => (
     <TeamSection />
     <ProjectSection />
     <JoinusSection />
+    <Footer />
   </div>
 )
 
