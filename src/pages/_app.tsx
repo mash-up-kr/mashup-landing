@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from "next/head";
 import '@styles/main.scss';
+import ICON from '@resources/images/icon.png';
+import THOMB from '@resources/images/thomb.png';
 
 function App({Component, pageProps}) {
   return (
@@ -25,13 +27,14 @@ function App({Component, pageProps}) {
           property="og:description"
           content="mash-up은 디자이너 개발자, 학생 직장인이 모여 함께 서비스를 만들고 학습하는 IT 동아리 입니다."
         />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content={ THOMB } />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Mash-up | IT 연합 동아리" />
         <meta
           name="twitter:description"
           content="mash-up은 디자이너 개발자, 학생 직장인이 모여 함께 서비스를 만들고 학습하는 IT 동아리 입니다."
         />
+        <link rel='icon' href={ ICON } type='imagge/png'/>
         <link data-react-helmet="true" rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css" />
         <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css" />
         <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css" rel="stylesheet" type="text/css" />
