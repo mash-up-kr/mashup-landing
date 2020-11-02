@@ -67,3 +67,30 @@
     display: block;
   }
 }
+
+.Animation {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+}
+
+.Lottie {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  @include iphone {
+    display: none;
+  }
+}
+
+.LottieMobile {
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  @include iphone {
+    display: block;
+  }
+}
