@@ -5,7 +5,6 @@
 body {
   background: $page-bg-first-color;
   color: $page-text-first-color;
-  overflow-x: hidden;
 }
 
 ::selection {
@@ -15,6 +14,7 @@ body {
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1, h2, p, ul, ol, li {
