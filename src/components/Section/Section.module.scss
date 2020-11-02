@@ -34,32 +34,12 @@
   justify-content: center;
   align-content: center;
   position: -webkit-sticky;
-  position: sticky;
-  top: 80px;
   background: $page-bg-first-color;
   z-index: 10;
 
   @include iphone {
     top: 60px;
   }
-}
-
-.TopShadow {
-  position: absolute;
-  width: calc(100% + 32px);
-  height: 100px;
-  left: -16px;
-  top: -98px;
-  background: $page-bg-first-color;
-}
-
-.Shadow {
-  position: absolute;
-  width: calc(100% + 32px);
-  height: 40px;
-  bottom: -38px;
-  left: -16px;
-  background: linear-gradient($page-bg-first-color, #00000000);
 }
 
 .AddPadding {

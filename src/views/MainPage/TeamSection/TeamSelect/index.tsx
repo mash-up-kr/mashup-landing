@@ -23,7 +23,6 @@ export const TeamSelect: React.FC<Props> = ({ selectedTeam, setTeam }: Props) =>
       data-aos='fade-up'
       data-aos-duration='1000'
     >
-      <div className={ S.TopShadow } />
       {
         TEAM_LIST.map((team) => (
           <li
@@ -38,7 +37,6 @@ export const TeamSelect: React.FC<Props> = ({ selectedTeam, setTeam }: Props) =>
           </li>
         ))
       }
-      <div className={ S.Shadow } />
     </ul>
   );
 }

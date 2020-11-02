@@ -6,9 +6,6 @@
   margin-top: 68px;
   display: flex;
   justify-content: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 247px;
   background: $page-bg-first-color;
   z-index: 2;
   padding: 0 16px;
@@ -77,22 +74,4 @@
   @include iphoneSE {
     font-size: 14px;
   }
-}
-
-.TopShadow {
-  position: absolute;
-  width: calc(100% + 32px);
-  height: 40px;
-  left: -16px;
-  top: -40px;
-  background: $page-bg-first-color;
-}
-
-.Shadow {
-  position: absolute;
-  width: calc(100% + 32px);
-  height: 40px;
-  bottom: -40px;
-  left: -16px;
-  background: linear-gradient($page-bg-first-color, #00000000);
 }
