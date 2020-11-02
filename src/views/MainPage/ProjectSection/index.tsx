@@ -25,6 +25,7 @@ const ProjectSection: React.FC<Props> = () => (
   <Section
     sectionId='works'
     title='우리가 만든 것들 한 번 볼래?'
+    hasPadding={ false }
     subTitle={ (
       <>
         함께 머리를 맞대어 어려운 난관에도 절대 물러서는 법이 없지!<br />

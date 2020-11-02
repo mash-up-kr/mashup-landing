@@ -66,7 +66,11 @@ const PlaySection: React.FC<Props> = () => {
           dataAosDuration='1000'
         />
       </article>
-      <article className={ S.MobileContainer }>
+      <article
+        className={ S.MobileContainer }
+        data-aos='fade-left'
+        data-aos-duration='600'
+      >
         <Slider { ...sliderOptions }>
           <ImageGridView title='team study' images={ TEAM_STUDY } />
           <ImageGridView title='webinar' images={ WEBINAR } />

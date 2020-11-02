@@ -11,6 +11,7 @@ export interface TalkItem {
   commentType?: 'img' | 'text' | 'link';
   comment?: any;
   link?: string;
+  profile?: boolean;
 }
 
 const { UXUI, BACKEND, WEB, ANDROID, IOS } = TEAM;
@@ -22,6 +23,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'start',
       commentType: 'text',
       comment: '🙂UX/UI팀에 대해 궁금해요!!',
+      profile: true,
     },
     {
       side: 'divide',
@@ -47,6 +49,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'start',
       commentType: 'text',
       comment: '🙂이번 Back-end팀은 스프링팀과 노드팀으로 운영된다던데...',
+      profile: true,
     },
     {
       side: 'end',
@@ -72,6 +75,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'start',
       commentType: 'text',
       comment: '🤔 Node.js 팀은 어떻게 진행되나요?',
+      profile: true,
     },
     {
       side: 'end',
@@ -104,6 +108,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'start',
       commentType: 'text',
       comment: '🙂 Mash-up 웹팀은 어떻게 활동하나요?',
+      profile: true,
     },
     {
       side: 'end',
@@ -148,6 +153,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'start',
       commentType: 'text',
       comment: '🙂 iOS팀에 대해 궁금해요!!',
+      profile: true,
     },
     {
       side: 'end',
@@ -177,6 +183,7 @@ export const JOIN_US_TALK: TalkItem[] = [
     side: 'start',
     commentType: 'text',
     comment: '좋아!!!!',
+    profile: true,
   },
   {
     side: 'start',
@@ -199,7 +206,7 @@ export const JOIN_US_TALK: TalkItem[] = [
   {
     side: 'end',
     commentType: 'link',
-    comment: 'Mash-Up 10기 지원하러 가기!  👉',
+    comment: 'Mash-Up 10기 지원하러 가기! 👉',
     link: 'https://www.notion.so/Mash-Up-10-2d94745cf6014adfb5e95ddc33dd32dd'
   },
 ];

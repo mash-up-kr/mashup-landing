@@ -16,6 +16,7 @@ const TeamSection: React.FC<Props> = () => {
   return (
     <Section
       sectionId='team'
+      hasPadding={ false }
       title='매쉬업의 멋진 팀들을 소개할게!'
       subTitle={ (
         <>
@@ -28,7 +29,10 @@ const TeamSection: React.FC<Props> = () => {
        selectedTeam={ selectedTeam }
        setTeam={ setSelectedTeam }
       />
-      <Talk animation={ true } talks={ teamTalk } />
+      <div style={{ padding: '0 16px' }}>
+        <Talk animation={ true } talks={ teamTalk } />
+      </div>
+
     </Section>
   );
 }

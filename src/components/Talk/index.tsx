@@ -4,6 +4,7 @@ import cc from 'classcat';
 import S from './styles.module.scss';
 import { TalkItem } from '@constants/talk';
 
+import IMG_PROFILE from '@resources/svg/profile.svg';
 
 interface Props {
   animation?: boolean;
@@ -15,7 +16,7 @@ export const Talk: React.FC<Props> = ({ animation = false, talks }: Props) => {
   return (
     <ul className={ S.Container }>
       {
-        talks.map(({ commentType, comment, side, link }) => {
+        talks.map(({ commentType, comment, profile, side, link }) => {
           const options = animation ? {
             ['data-aos']: side === 'end' ? 'zoom-in-left' : 'zoom-in-right',
             ['data-aos-duration']: '800'
@@ -36,6 +37,20 @@ export const Talk: React.FC<Props> = ({ animation = false, talks }: Props) => {
                 ])}
                 { ...options }
               >
+                {
+                  side === 'start' && (
+                    <img
+                      className={ cc([
+                        S.Profile,
+                        {
+                          [S.ProfileHide]: !profile,
+                        }
+                      ]) }
+                      src={ IMG_PROFILE }
+                      alt='프로필'
+                    />
+                  )
+                }
                 <p
                   className={ cc([
                     S.TalkComment,

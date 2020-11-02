@@ -11,16 +11,17 @@
   top: 247px;
   background: $page-bg-first-color;
   z-index: 2;
+  padding: 0 16px;
 
   @include mobile {
     margin-top: 50px;
-    top: 220px;
+    top: 240px;
   }
 
   @include iphone {
     margin-top: 32px;
     justify-content: flex-start;
-    top: 260px;
+    top: 180px;
   }
 }
 

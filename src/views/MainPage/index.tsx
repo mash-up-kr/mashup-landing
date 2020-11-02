@@ -31,6 +31,7 @@ const MainPage: React.FC<Props> = () => {
       duration: 400,
       easing: 'ease',
       once: false,
+      mirror: false,
     });
   }, []);
 

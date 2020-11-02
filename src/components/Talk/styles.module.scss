@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixin";
+@import "keyframes";
 
 .Container {
   width: 100%;
@@ -118,11 +119,37 @@
   }
 }
 
+.Profile {
+  width: 75px;
+  height: 75px;
+  margin-right: 45px;
+  visibility: visible;
+
+  @include mobile {
+    width: 60px;
+    height: 60px;
+    margin-right: 24px;
+  }
+
+  @include iphone {
+    width: 44px;
+    height: 44px;
+    margin-right: 8px;
+  }
+}
+
+.ProfileHide {
+  visibility: hidden;
+}
+
 .TalkCommentLink {
   cursor: pointer;
-  transition: transform ease-in 200ms;
+  animation: delayedShake 2000ms cubic-bezier(.36, .07, .19, .97) infinite;
+  transition: all ease-in 200ms;
+
 
   &:hover {
+    animation: none;
     transform: scale(1.03);
   }
 }
