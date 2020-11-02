@@ -19,10 +19,14 @@
 
 .Title {
   font-family: $gilroy-font;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   color: $page-text-second-color;
   margin-bottom: 8px;
+
+  @include iphone {
+    font-size: 18px;
+  }
 }
 
 .ContentsWrap {

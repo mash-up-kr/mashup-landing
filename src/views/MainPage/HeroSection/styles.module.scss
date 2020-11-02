@@ -25,7 +25,7 @@
 }
 
 .SubTitle {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   color: $page-text-second-color;
   text-align: center;
@@ -43,19 +43,19 @@
 
 .Title {
   margin-top: 8px;
-  font-size: 88px;
+  font-size: 72px;
   font-family: $gilroy-font;
   font-weight: 800;
   color: $page-text-first-color;
   text-align: center;
 
   @include tablet {
-    font-size: 68px;
+    font-size: 56px;
   }
 
   @include iphone {
-    font-size: 56px;
-    line-height: 1.1;
+    font-size: 38px;
+    line-height: 1;
     margin-top: 0;
   }
 }

@@ -26,7 +26,7 @@
 
 .Label {
   cursor: pointer;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   color: $select-button-color;
   letter-spacing: 1.12px;
@@ -40,7 +40,7 @@
   }
 
   @include mobile {
-    font-size: 24px;
+    font-size: 20px;
     padding: 0 13px;
   }
 
@@ -56,7 +56,7 @@
 
 .SelectedLabel {
   cursor: pointer;
-  font-size: 32px;
+  font-size: 24px;
   text-shadow: 0 0 1px $select-button-focus-color, 0 0 1px $select-button-focus-color;
   color: $select-button-focus-color;
   letter-spacing: 1.12px;
@@ -64,7 +64,7 @@
   text-align: center;
 
   @include mobile {
-    font-size: 24px;
+    font-size: 20px;
     padding: 0 13px;
   }
 

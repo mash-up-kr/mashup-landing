@@ -42,7 +42,7 @@ $offset-y: 50px;
   }
 
   .MenuItem {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: $page-text-first-color;
     text-decoration: none;
@@ -55,7 +55,7 @@ $offset-y: 50px;
   .MenuButton {
     display: inline-block;
     padding: 0 24px;
-    line-height: 48px;
+    line-height: 40px;
     border-radius: 28px;
     background: $talk-end-side;
     font-size: 16px;
