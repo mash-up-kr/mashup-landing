@@ -8,9 +8,9 @@ import IMG_TEAM_3 from '@resources/images/team_3.jpg';
 import IMG_WEBINAR_1 from '@resources/images/webinar_1.jpg';
 import IMG_WEBINAR_2 from '@resources/images/webinar_2.jpg';
 import IMG_WEBINAR_3 from '@resources/images/webinar_3.jpg';
-import IMG_HACK_1 from '@resources/images/hack_1.png';
-import IMG_HACK_2 from '@resources/images/hack_2.png';
-import IMG_HACK_3 from '@resources/images/hack_3.png';
+import IMG_HACK_1 from '@resources/images/hack_1.jpg';
+import IMG_HACK_2 from '@resources/images/hack_2.jpg';
+import IMG_HACK_3 from '@resources/images/hack_3.jpg';
 
 import S from './styles.module.scss';
 import Slider from 'react-slick';
