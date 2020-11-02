@@ -1,14 +1,17 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Section from '@components/Section/Section';
 import { TEAM, TEAM_TALK_LIST } from '@constants/talk';
 import { TeamSelect } from '@views/MainPage/TeamSection/TeamSelect';
 import { Talk } from '@components/Talk';
+import AOS from 'aos';
 
 interface Props {};
 
 const TeamSection: React.FC<Props> = () => {
   const [selectedTeam, setSelectedTeam] = useState(TEAM.UXUI);
   const teamTalk = useMemo(() => TEAM_TALK_LIST[selectedTeam], [selectedTeam]);
+
+  useEffect(() => { AOS.refreshHard(); }, [teamTalk]);
 
   return (
     <Section
@@ -25,7 +28,7 @@ const TeamSection: React.FC<Props> = () => {
        selectedTeam={ selectedTeam }
        setTeam={ setSelectedTeam }
       />
-      <Talk talks={ teamTalk } />
+      <Talk animation={ true } talks={ teamTalk } />
     </Section>
   );
 }

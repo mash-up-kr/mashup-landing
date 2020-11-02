@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+::selection {
+  background: $select-button-focus-color;
+  color: $page-text-first-color;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -21,3 +26,4 @@ h1, h2, p, ul, ol, li {
 ul, ol, li {
   list-style: none;
 }
+
