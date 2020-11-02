@@ -206,7 +206,7 @@ export const JOIN_US_TALK: TalkItem[] = [
   {
     side: 'end',
     commentType: 'link',
-    comment: 'Mash-Up 10기 지원하러 가기! 👉',
+    comment: 'Mash-Up 10기 지원하러 가기! →',
     link: 'https://www.notion.so/Mash-Up-10-2d94745cf6014adfb5e95ddc33dd32dd'
   },
 ];
