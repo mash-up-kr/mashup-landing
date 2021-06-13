@@ -5,6 +5,7 @@ import S from './styles.module.scss';
 import { TalkItem } from '@constants/talk';
 
 import IMG_PROFILE from '@resources/svg/profile.svg';
+import { collectGaEvent } from '@utils/google';
 
 interface Props {
   animation?: boolean;
@@ -12,6 +13,17 @@ interface Props {
 };
 
 export const Talk: React.FC<Props> = ({ animation = false, talks }: Props) => {
+  const handleLinkClick = (link?: string, comment?: string) => {
+    if(!link) {
+      return;
+    }
+
+    if(comment) {
+      collectGaEvent(`Talk_${comment}_클릭`);
+    }
+    
+    window.open(link, '_blank');
+  }
 
   return (
     <ul className={ S.Container }>
@@ -60,7 +72,7 @@ export const Talk: React.FC<Props> = ({ animation = false, talks }: Props) => {
                       [S.TalkCommentLink]: commentType === 'link',
                     }
                   ]) }
-                  onClick={ () => { link && window.open(link, '_blank') } }
+                  onClick={ () => handleLinkClick(link, comment) }
                   dangerouslySetInnerHTML={{ __html: comment }}
                 >
                 </p>

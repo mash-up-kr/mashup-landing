@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 
 import S from './styles.module.scss';
 import { TEAM, TEAM_LIST } from '@constants/talk';
+import { collectGaEvent } from '@utils/google';
 
 interface Props {
   selectedTeam: TEAM,
@@ -15,6 +16,8 @@ export const TeamSelect: React.FC<Props> = ({ selectedTeam, setTeam }: Props) =>
     const { top } = element?.getBoundingClientRect();
     const offset = pageYOffset;
     scrollTo(0, Math.max(offset + top, 0));
+
+    collectGaEvent(`FAQ_${selectedTeam}_선택`);
   }, []);
 
   return (
