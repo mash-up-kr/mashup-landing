@@ -6,6 +6,7 @@ import S from './styles.module.scss';
 
 import IMG_LOGO from '@resources/images/logo.png';
 import IMG_LOGO_TITLE from '@resources/svg/logo-title.svg';
+import { collectGaEvent } from '@utils/google';
 
 const useAnimatedHeader = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -35,6 +36,8 @@ const Header = () => {
     const { top } = element?.getBoundingClientRect();
     const offset = pageYOffset;
     scrollTo(0, Math.max(offset + top, 0));
+
+    collectGaEvent(`헤더_${target}_선택`);
   }, []);
 
   return (
