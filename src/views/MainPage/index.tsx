@@ -11,6 +11,7 @@ import HeroSection from '@views/MainPage/HeroSection';
 import Header from '@views/MainPage/Header';
 import Footer from '@views/MainPage/Footer';
 import { initializeGa } from '@utils/google';
+import ChannelService from '@utils/services/ChannelService';
 
 
 interface Props {}
@@ -35,6 +36,10 @@ const MainPage: React.FC<Props> = () => {
       easing: 'ease',
       once: false,
       mirror: false,
+    });
+
+    ChannelService.boot({
+      'pluginKey': 'de276621-7c75-4d6b-a3e8-27b96c53fc6e',
     });
   }, []);
 
