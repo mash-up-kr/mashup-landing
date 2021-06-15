@@ -49,4 +49,4 @@ class ChannelService {
   }
 }
 
-export default new ChannelService();
+export default ChannelService;

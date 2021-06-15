@@ -38,7 +38,8 @@ const MainPage: React.FC<Props> = () => {
       mirror: false,
     });
 
-    ChannelService.boot({
+    const cService = new ChannelService();
+    cService.boot({
       'pluginKey': 'de276621-7c75-4d6b-a3e8-27b96c53fc6e',
     });
   }, []);
