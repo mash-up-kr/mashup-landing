@@ -44,7 +44,7 @@ export const Talk: React.FC<Props> = ({ animation = false, talks }: Props) => {
                   S.TalkWrap,
                   {
                     [S.EndSide]: side === 'end',
-                    [S.EndSideImg]: commentType === 'img',
+                    [S.EndSideImg]: commentType === 'emoji',
                   }
                 ])}
                 { ...options }
@@ -63,19 +63,32 @@ export const Talk: React.FC<Props> = ({ animation = false, talks }: Props) => {
                     />
                   )
                 }
-                <p
-                  className={ cc([
-                    S.TalkComment,
-                    {
-                      [S.TalkEndSide]: side === 'end',
-                      [S.TalkCommentImg]: commentType === 'img',
-                      [S.TalkCommentLink]: commentType === 'link',
-                    }
-                  ]) }
-                  onClick={ () => handleLinkClick(link, comment) }
-                  dangerouslySetInnerHTML={{ __html: comment }}
-                >
-                </p>
+                { commentType === 'img' ? (
+                  <img
+                    className={ cc([
+                      S.TalkCommentImage,
+                      {
+                        [S.TalkEndSide]: side === 'end',
+                      }
+                    ]) }
+                    src={comment}
+                    alt={comment}
+                  />
+                ) : (
+                  <p
+                    className={ cc([
+                      S.TalkComment,
+                      {
+                        [S.TalkEndSide]: side === 'end',
+                        [S.TalkCommentEmoji]: commentType === 'emoji',
+                        [S.TalkCommentLink]: commentType === 'link',
+                      }
+                    ]) }
+                    onClick={ () => handleLinkClick(link, comment) }
+                    dangerouslySetInnerHTML={{ __html: comment }}
+                  >
+                  </p>
+                )}
               </li>
             )
           )

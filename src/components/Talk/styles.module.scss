@@ -102,10 +102,10 @@
 }
 
 .TalkEndSide {
-  background: #0078ff;
+  background: $talk-end-side;
 }
 
-.TalkCommentImg {
+.TalkCommentEmoji {
   background: transparent;
   border-radius: 0;
   font-size: 120px;
@@ -119,6 +119,22 @@
     font-size: 65px;
   }
 }
+
+.TalkCommentImage {
+  max-width: 550px;
+  height: auto;
+  padding: 24px 32px;
+  border-radius: 40px;
+
+  @include mobile {
+    max-width: 340px;
+  }
+
+  @include iphone {
+    max-width: 272px;
+  }
+}
+
 
 .Profile {
   width: 75px;

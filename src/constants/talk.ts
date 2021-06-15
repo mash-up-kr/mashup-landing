@@ -9,7 +9,7 @@ export enum TEAM {
 
 export interface TalkItem {
   side: 'start' | 'end' | 'divide';
-  commentType?: 'img' | 'text' | 'link';
+  commentType?: 'emoji' | 'text' | 'link' | 'img';
   comment?: any;
   link?: string;
   profile?: boolean;
@@ -32,9 +32,12 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: `Mash-Up의 ✨빛과 🧂소금인 UX/UI 디자인팀이에요!
-
-      저희는 포트폴리오부터 아티클, 웹 스터디 등 💪
+      comment: `Mash-Up의 ✨빛과 🧂소금인 UX/UI 디자인팀이에요!`,
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: `저희는 포트폴리오부터 아티클, 웹 스터디 등 💪
       디자인 벌크업을 위한 다양한 스터디를 진행하고 있어요.
       
       📚 Full stack 디자이너들이 모여 관심있는 디자인 이슈, 트렌드에 관한 정보도 공유하고 친목도 다집니다🥰`,
@@ -46,13 +49,21 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
 
       다양한 디자이너, 개발자분들과 이야기를 나누며 시야를 넓히고 싶다면🤝
       자신의 디자인을 실제 서비스로 발전시키는 경험을 하고 싶다면💪
-      디자이너들과 디자인적 고민을 함께 나누고 정보를 교류하고 싶다면🙏
-      
-      디자인팀의 자기님이 되어주세요💖`,
+      디자이너들과 디자인적 고민을 함께 나누고 정보를 교류하고 싶다면🙏`,
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: `디자인팀의 자기님이 되어주세요💖`,
     },
     {
       side: 'end',
       commentType: 'img',
+      comment: 'ux1.png',
+    },
+    {
+      side: 'end',
+      commentType: 'emoji',
       comment: '🌞🌝',
     }
   ],
@@ -60,7 +71,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'start',
       commentType: 'text',
-      comment: `'🙂이번 Back-end팀은 스프링팀과 노드팀으로 운영된다던데...'`,
+      comment: `'🙂스프링팀에 대해 궁금해요!!'`,
       profile: true,
     },
     {
@@ -87,13 +98,13 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'end',
       commentType: 'text',
       comment: `제가 한 번 스프링으로 삼행시 해보겠습니다. 🙋
-      <span style='color: #00a86b'>스</span>프링 팀 지원자 여러분! 스프링을 깊게 알아가고 싶은 당신!
-      <span style='color: #00a86b'>프</span>로젝트와 세미나, 스터디에 팀워크를 곁들인 스프링팀 성장Story에 함께 하지 않을래요? 
-      <span style='color: #00a86b'>링</span>크(지원)를 통해 지금 당신의 이야기를 저희에게 들려주세요!`
+      <strong>스</strong>프링 팀 지원자 여러분! 스프링을 깊게 알아가고 싶은 당신!
+      <strong>프</strong>로젝트와 세미나, 스터디에 팀워크를 곁들인 스프링팀 성장Story에 함께 하지 않을래요? 
+      <strong>링</strong>크(지원)를 통해 지금 당신의 이야기를 저희에게 들려주세요!`
     },
     {
       side: 'end',
-      commentType: 'img',
+      commentType: 'emoji',
       comment: '🌱♨️',
     },
   ],
@@ -126,12 +137,12 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: `노 노드팀
-      드 드루와!!🥊`,
+      comment: `<strong>노</strong> 노드팀
+      <strong>드</strong> 드루와!!🥊`,
     },
     {
       side: 'end',
-      commentType: 'img',
+      commentType: 'emoji',
       comment: '🐎🎲',
     },
   ],
@@ -145,8 +156,8 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: `철이 없었죠. 자바스크립트를 좋아한다는 것 자체가..
-      하지만 걱정하지 말아요. 타입스크립트에도 진심이니까.`,
+      comment: `<i>철이 없었죠. 자바스크립트를 좋아한다는 것 자체가..
+      하지만 걱정하지 말아요. 타입스크립트에도 진심이니까.</i>`,
     },
     {
       side: 'end',
@@ -159,6 +170,11 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     },
     {
       side: 'end',
+      commentType: 'img',
+      comment: 'web1.jpg',
+    },
+    {
+      side: 'end',
       commentType: 'text',
       comment: `저희 Mash-up 웹팀에서는 웹과 관련된 다양한 컨텐츠를 만들거에요!
       리액트와 관련된 세미나부터
@@ -167,7 +183,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     },
     {
       side: 'end',
-      commentType: 'img',
+      commentType: 'emoji',
       comment: '🙌🔥',
     }
   ],
@@ -199,13 +215,13 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: `안@ 안그래도 좋은 곳
-      드@ 드루와!!!!`,
+      comment: `<strong style='color: #8bf56e'>안</strong>@ 안그래도 좋은 곳
+      <strong style='color: #8bf56e'>드</strong>@ 드루와!!!!`,
     },
     {
       side: 'end',
-      commentType: 'img',
-      comment: '🧚🏻🧃',
+      commentType: 'emoji',
+      comment: '🧚🏻',
     }
   ],
   [IOS]: [
@@ -243,13 +259,13 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: `아! 아직 iOS 앱을 안만들어봤다고?
-      오! 오면 만들수 있어!
-      스! 스을퍼 하지 말고 드루와🔥`,
+      comment: `<strong>아</strong>! 아직 iOS 앱을 안만들어봤다고?
+      <strong>오</strong>! 오면 만들수 있어!
+      <strong>스</strong>! 스을퍼 하지 말고 드루와🔥`,
     },
     {
       side: 'end',
-      commentType: 'img',
+      commentType: 'emoji',
       comment: '🧵🧵',
     },
   ],
@@ -269,7 +285,7 @@ export const JOIN_US_TALK: TalkItem[] = [
   },
   {
     side: 'start',
-    commentType: 'img',
+    commentType: 'emoji',
     comment: '💪🏻',
   },
   {
@@ -277,7 +293,7 @@ export const JOIN_US_TALK: TalkItem[] = [
   },
   {
     side: 'end',
-    commentType: 'img',
+    commentType: 'emoji',
     comment: '🎉',
   },
   {
