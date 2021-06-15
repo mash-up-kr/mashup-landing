@@ -51,7 +51,7 @@ const Footer = () => (
     }
   </div>
   <p className={ S.Description }>
-    © Mash-Up. 2020 All rights reserved
+    © Mash-Up. 2021 All rights reserved
   </p>
 </footer>
 );
