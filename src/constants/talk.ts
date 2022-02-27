@@ -1,5 +1,5 @@
 export enum TEAM {
-  UXUI = 'UX/UI',
+  PRODUCT_DESIGN = 'Product Design',
   SPRING = 'Spring',
   NODE = 'Node',
   WEB = 'Web',
@@ -15,15 +15,15 @@ export interface TalkItem {
   profile?: boolean;
 }
 
-const { UXUI, SPRING, NODE, WEB, ANDROID, IOS } = TEAM;
-export const TEAM_LIST = [ UXUI, SPRING, NODE, WEB, ANDROID, IOS ];
+const { PRODUCT_DESIGN, SPRING, NODE, WEB, ANDROID, IOS } = TEAM;
+export const TEAM_LIST = [ PRODUCT_DESIGN, SPRING, NODE, WEB, ANDROID, IOS ];
 
 export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
-  [UXUI]: [
+  [PRODUCT_DESIGN]: [
     {
       side: 'start',
       commentType: 'text',
-      comment: '🙂UX/UI팀에 대해 궁금해요!!',
+      comment: '프로덕트 디자인팀이 궁금해요! 👀',
       profile: true,
     },
     {
@@ -32,34 +32,34 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: `Mash-Up의 ✨빛과 🧂소금인 UX/UI 디자인팀이에요!`,
+      comment: `안녕하세요😊 Mash-Up의 ✨빛과 🧂소금인 프로덕트 디자인팀이에요! 🧚‍♀️`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `저희는 포트폴리오부터 아티클, 웹 스터디 등 💪
+      comment: `우리는 포트폴리오부터 아티클, 웹 스터디 등 💪
       디자인 벌크업을 위한 다양한 스터디를 진행하고 있어요.
-      
-      📚 Full stack 디자이너들이 모여 관심있는 디자인 이슈, 트렌드에 관한 정보도 공유하고 친목도 다집니다🥰`,
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `Mash Up의 UX/UI 디자인팀은 함께 성장해 나갈 자기님들을 기다리고 있어요😘
 
-      다양한 디자이너, 개발자분들과 이야기를 나누며 시야를 넓히고 싶다면🤝
-      자신의 디자인을 실제 서비스로 발전시키는 경험을 하고 싶다면💪
-      디자이너들과 디자인적 고민을 함께 나누고 정보를 교류하고 싶다면🙏`,
+      📚 Full stack 디자이너들이 모여 관심있는 디자인 이슈, 트렌드에 관한 정보도 공유하고 친목도 다집니다🥰🍻`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `디자인팀의 자기님이 되어주세요💖`,
+      comment: `Mash Up의 프로덕트 디자인팀은 함께 성장해 나갈 🧚‍♀️ 요정님들을 기다리고 있어요😘
+
+      다양한 디자이너, 개발자분들과 이야기를 나누며 시야를 넓히고 싶다면!🤝
+      자신의 디자인을 실제 서비스로 발전시키는 경험을 하고 싶다면!💪
+      디자이너들과 디자인적 고민을 함께 나누고 정보를 교류하고 싶다면!🙏`,
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: `프로덕트 디자인팀의 뉴비 요정님이 되어주세요💖`,
     },
     {
       side: 'end',
       commentType: 'img',
-      comment: 'ux1.png',
+      comment: 'product-design1.gif',
     },
     {
       side: 'end',
@@ -76,36 +76,33 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     },
     {
       side: 'end',
-      commentType: 'text',
-      comment: `<i>스프링 좋아하지마...
-      그게 뭔데...
-      ..스프링 좋아하지말라구....
-      그거... 어떻게 하는건데......</i>`,
+      commentType: 'img',
+      comment: 'spring-1.png',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: '안녕하세봄쥬르~!🙌 Mash-Up의 킹왕짱👑 폭풍간zi🌪️ 스프링 팀🌱입니다.',
+      comment: '안녕하세yo~! 🙌🏻 Mash-Up의 오나전 지대 킹왕짱 폭풍간zi 인싸(가 되고 싶은) 스프링팀🌱 입니다.',
     },
     {
       side: 'end',
       commentType: 'text',
       comment: `저희 스프링 팀은 "WHY❓"에 집중하고 있습니다.
-      "왜 이 기술을 사용하는지"에 대한 답을 찾기 위해선 기본기가 중요한 요소로 자리매김하고 있습니다.
-      때문에 저희는 프로젝트와 세미나, 스터디를 통해 기본기에 기반한 기술적 성장을 위해 정진하고 있습니다. 🔥`,
+      "왜 이 기술을 사용하는지"에 대한 답을 찾기 위해선 기본기가 중요합니다.
+      그렇기에 저희는 프로젝트와 세미나, 스터디를 통해 탄탄한 기본기를 만들고 이를 기반한 기술적 성장을 위해 정진하고 있습니다. `,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `제가 한 번 스프링으로 삼행시 해보겠습니다. 🙋
-      <strong>스</strong>프링 팀 지원자 여러분! 스프링을 깊게 알아가고 싶은 당신!
-      <strong>프</strong>로젝트와 세미나, 스터디에 팀워크를 곁들인 스프링팀 성장Story에 함께 하지 않을래요? 
-      <strong>링</strong>크(지원)를 통해 지금 당신의 이야기를 저희에게 들려주세요!`
+      comment: `제가 한 번 스프링으로 삼행시 해보겠습니다.
+      <strong>스!</strong> 프링을 깊게 알아가고 싶은 당신!
+      <strong>프!</strong>로젝트와 세미나, 스터디에 팀워크를 곁들인 스프링팀 성장 Story에 함께 하지 않을래요?
+      <strong>링!</strong>크(지원)를 눌러눌러~!!`
     },
     {
       side: 'end',
       commentType: 'emoji',
-      comment: '🌱♨️',
+      comment: '👑 🌱',
     },
   ],
   [NODE]: [
@@ -118,27 +115,37 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: '안녕하세요. 매쉬업의 떠오르는 ⭐️샛별⭐️ 노드팀입니다. 👏👏',
+      comment: '안녕하세요! Mash-Up의 다크호스(로 거듭날 👊👊), 노드팀을 소개합니다!',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `노드팀의 키워드는 <span style='color: #00a86b'>'빠른 속도'</span>와 <span style='color: #00a86b'>'끊임 없는 증명'</span>입니다!
-      노드팀의 스터디 방식은 빠르게 기술을 학습하여 내가 <span style='color: #00a86b'>'알고 있다'</span>를 꾸준히 증명합니다.
-      프로젝트도 빠르게 서버를 배포하여 서비스가 올바르게 <span style='color: #00a86b'>'나아가고 있다'</span>를 꾸준히 증명합니다.
-      `,
+      comment: `첫 번째, 빠르고 민첩하게 🏄‍♀️
+      폭넓은 개발 생태계와 가벼우면서도 강력한 언어로 필요한 기능을 빠르게 구현해봐요. 🧐`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `개발이면 개발! 친목이면 친목! 함께 성장할 동료를 모집합니다~ 🎉
-      남녀노소 활발하고 <span style='color: red'>모각코</span>(모여서 각자 코딩) 좋아하시는 분들 대환영입니다!`,
+      comment: `두 번째, 연습은 실전처럼 🔥
+      동아리 프로젝트라서 가벼울거라는 생각은 금물! 코드 리뷰와 도커를 활용한 배포까지, 실전같은 End-to-End 개발 프로세스를 지향해요. 🔨⚙️🪚`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `<strong>노</strong> 노드팀
-      <strong>드</strong> 드루와!!🥊`,
+      comment: `세 번째, 개발은 모두함께 👥
+      개발은 혼자해도 재밌지만 모여서 하면 더 재밌답니다! 서로 아는 것을 공유하고 모르는 것을 배워가면서 함께 성장해요.  🤸‍♂️🤾‍♂️🤼‍♂️`,
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: `Mash-Up 크루 들과 게임 등 같이 취미 생활을 즐기며 알찬 시간을 보내실 분들!
+      지금 당장 지원해주세요~~`,
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: `<strong>노</strong>@ 드팀과 함께 토크토크 하며
+      <strong>드</strong>@ 넓은 개발의 세계로~!`,
     },
     {
       side: 'end',
@@ -197,26 +204,23 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: `(꺄르륵 꺄르륵)
-      아니 어디서 화목한 웃음소리 안들리시나요!! (•᷄ʚ •᷅)( •᷄ө•᷅ )(•᷄ʚ •᷅ )( •᷄ ɞ•᷅)`,
+      comment: `안녕하세요! <strong>개발과 친목을 둘다 챙길 욕심꾸러기</strong> 안드로이드 🤖  팀입니다.
+      다양한 스터디들과 세미나, 프로젝트들을 통해 성장 해나가면서 동시에 친목🏄 을 다지고 있어요!`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `팀원들끼리 사이도 짱좋고 개발왕 찐천재들이 모여있는 이곳은 바로 안드로이드🤖팀입니다-!(<span style='color: #00a86b'>Ta</span>-da!🎉)`,
+      comment: `저희와 함께 서로에게 좋은 영향력을 주고 싶은 분들!
+      열정있게!🔥 참여하실 수 있으신 분들!
+      자유롭게 지식을 공유하고 시덥잖은 농담도 주고받고 싶은 분들!
+      Mash-Up 크루 들과 게임 등 같이 취미 생활을 즐기며 알찬 시간을 보내실 분들!
+      지금 당장 지원해주세요오오!!!!!`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `저희와 함께 서로에게 좋은 영향력을 행하고싶은 안둥이여러분,
-      자유롭게 지식을 공유하고 시덥잖은 농담도 주고받고싶은 안둥이여러분,
-      지금 당장 지원해주쎄요!!!!`,
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `<strong style='color: #8bf56e'>안</strong>@ 안그래도 좋은 곳
-      <strong style='color: #8bf56e'>드</strong>@ 드루와!!!!`,
+      comment: `<strong style='color: #8bf56e'>안</strong>@ 안드로이드 팀과 함께
+      <strong style='color: #8bf56e'>드</strong>@ 드라이브가자!!!!! 🚘`,
     },
     {
       side: 'end',
@@ -234,39 +238,37 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: '이곳인가...? 여깁니다!!!',
+      comment: '안녕 귀여운 애플둥이들?? 여기는 바로 당신을 위한 곳 아! 오! 스!! 🍎🍎 ❤️❤️',
+    },
+    {
+      side: 'end',
+      commentType: 'img',
+      comment: 'ios-1.gif',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `🌏 저세상텐션 저세상으로 가지말고 여기로와!
-      🍻 술게임에서 이진탐색을 활용하는 뼈개발자!
-      🍎 밤새우면서 애플이벤트 챙겨보는 애플러버!`,
+      comment: `😮‍💨 혼자 iOS 개발하면서 힘들었나?
+      😎 개발하다가 스트레스 풀 곳이 없었나??!
+      👀 밤새면서 같이 애플 이벤트 볼 친구도 없었나???
+      그렇다면 당신!! 당장 iOS 팀으로 달려와~~~❤️❤️`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `iOS팀에서는 개발에 익숙한 직장인 부터~! 앱개발자를 꿈꾸는 학생들까지~!👨‍💻👩‍💻
-      다 같이 모여 서로의 지식을 공유하고 꿈을 키워나가고 있습니당!🦄
-      물론 친목도 빠질수 없쥬! 
-      코로나 방역 수칙을 지키는 선에서 자잘한 오프라인 모임도 진행할 예정이에요😆`,
+      comment: `직장인이라고?👨🏻‍💻 대학생이라고?🧑🏻‍🎓 모두 상관없으니까 일단 iOS 앱 개발자 꿈꾸는 사람이라면 모두 드루와!
+      친목이라면 친목, 스터디라면 스터디 모두 잡을 수 있는 유일한 iOS 팀 💘
+      코로나 방역 수칙을 지키는 선에서 자주 오프라인으로도 모일 예정이니까 일단 고민말고 고! 🏃‍♂️`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `iOS 팀에서 친목도 다지고 각자의 목표를 이루시길 바랍니다🥰`,
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `<strong>아</strong>! 아직 iOS 앱을 안만들어봤다고?
-      <strong>오</strong>! 오면 만들수 있어!
-      <strong>스</strong>! 스을퍼 하지 말고 드루와🔥`,
+      comment: `iOS팀에서는 열정 넘치는 당신을 기다리고 있다규 🔥❣️ `,
     },
     {
       side: 'end',
       commentType: 'emoji',
-      comment: '🧵🧵',
+      comment: '🍎🥰',
     },
   ],
 }
@@ -299,7 +301,7 @@ export const JOIN_US_TALK: TalkItem[] = [
   {
     side: 'end',
     commentType: 'link',
-    comment: 'Mash-Up 11기 지원하러 가기! →',
+    comment: 'Mash-Up 12기 지원하러 가기! →',
     link: 'https://www.notion.so/Mash-Up-10-2d94745cf6014adfb5e95ddc33dd32dd'
   },
 ];
