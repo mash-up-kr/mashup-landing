@@ -5,7 +5,7 @@ export enum TEAM {
   WEB = 'Web',
   ANDROID = 'Android',
   IOS = 'iOS',
-};
+}
 
 export interface TalkItem {
   side: 'start' | 'end' | 'divide';
@@ -16,7 +16,7 @@ export interface TalkItem {
 }
 
 const { PRODUCT_DESIGN, SPRING, NODE, WEB, ANDROID, IOS } = TEAM;
-export const TEAM_LIST = [ PRODUCT_DESIGN, SPRING, NODE, WEB, ANDROID, IOS ];
+export const TEAM_LIST = [PRODUCT_DESIGN, SPRING, NODE, WEB, ANDROID, IOS];
 
 export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
   [PRODUCT_DESIGN]: [
@@ -65,7 +65,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'end',
       commentType: 'emoji',
       comment: '🌞🌝',
-    }
+    },
   ],
   [SPRING]: [
     {
@@ -82,7 +82,8 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: '안녕하세yo~! 🙌🏻 Mash-Up의 오나전 지대 킹왕짱 폭풍간zi 인싸(가 되고 싶은) 스프링팀🌱 입니다.',
+      comment:
+        '안녕하세yo~! 🙌🏻 Mash-Up의 오나전 지대 킹왕짱 폭풍간zi 인싸(가 되고 싶은) 스프링팀🌱 입니다.',
     },
     {
       side: 'end',
@@ -97,7 +98,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       comment: `제가 한 번 스프링으로 삼행시 해보겠습니다.
       <strong>스!</strong> 프링을 깊게 알아가고 싶은 당신!
       <strong>프!</strong>로젝트와 세미나, 스터디에 팀워크를 곁들인 스프링팀 성장 Story에 함께 하지 않을래요?
-      <strong>링!</strong>크(지원)를 눌러눌러~!!`
+      <strong>링!</strong>크(지원)를 눌러눌러~!!`,
     },
     {
       side: 'end',
@@ -157,42 +158,63 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'start',
       commentType: 'text',
-      comment: '🙂 Mash-up 웹팀은 어떻게 활동하나요?',
+      comment: `<i>"왜 울었는데...."</i>`,
       profile: true,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `<i>철이 없었죠. 자바스크립트를 좋아한다는 것 자체가..
-      하지만 걱정하지 말아요. 타입스크립트에도 진심이니까.</i>`,
+      comment: `<i>"......양파 썰다가"</i>`,
+    },
+    {
+      side: 'start',
+      commentType: 'text',
+      comment: `<i>"왜 울었냐고"</i>`,
+      profile: true,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `안녕하세요, Mash-up 웹팀이에요.
-      팀 이름이 외자라서
-      외로움을 많이 타는 친구죠..
-      하지만 걱정하지 말아요
-      노는덴 <strong style='color: red'>공격적이니까</strong>`,
+      comment: `<i>"양파 때문이라고 대답했어"</i>`,
+    },
+    {
+      side: 'start',
+      commentType: 'text',
+      comment: `<i>"Web이 양파냐...."</i>`,
+      profile: true,
     },
     {
       side: 'end',
       commentType: 'img',
-      comment: 'web1.jpg',
+      comment: 'web.jpeg',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `저희 Mash-up 웹팀에서는 웹과 관련된 다양한 컨텐츠를 만들거에요!
-      리액트와 관련된 세미나부터
-      최신 웹 트렌드, 아키텍쳐나 오픈소스 분석같은 스터디도 같이 진행할 예정이에요!
-      개발과 친목 모두 잡고 싶은 열정적인 사람이라면 드루와!`,
+      comment: `안녕하세요~🙌 &nbsp Mash-up의 떠오르는 태양 웹팀이에요! ☀️`,
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: `저희 웹팀에서는 세미나를 통한 지식공유부터 웹 기술과 관련된 스터디, 타 플랫폼과 협업하여 진행하는 포트폴리오 스터디 등의 다양한 활동들을 통해 꾸준한 성장을 추구하고 있어요!`,
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: `하지만 걱정하지 마세요 노는데도 <strong style='color: red'>진심이니까</strong>
+      모각코, 게임, 회식 등 코로나 방역 수칙을 지키는 선에서 친목도 아주 탄탄하게 다지고 있답니다 🥰
+      `,
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: `Web때문에 울고 웃으며 함께 성장해나갈 바로 당신!! 망설이지 말고 지원 Go Go~! 😎`,
     },
     {
       side: 'end',
       commentType: 'emoji',
       comment: '🙌🔥',
-    }
+    },
   ],
   [ANDROID]: [
     {
@@ -226,7 +248,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'end',
       commentType: 'emoji',
       comment: '🧚🏻',
-    }
+    },
   ],
   [IOS]: [
     {
@@ -271,7 +293,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       comment: '🍎🥰',
     },
   ],
-}
+};
 
 export const JOIN_US_TALK: TalkItem[] = [
   {
@@ -302,6 +324,6 @@ export const JOIN_US_TALK: TalkItem[] = [
     side: 'end',
     commentType: 'link',
     comment: 'Mash-Up 12기 지원하러 가기! →',
-    link: 'https://www.notion.so/Mash-Up-10-2d94745cf6014adfb5e95ddc33dd32dd'
+    link: 'https://www.notion.so/Mash-Up-10-2d94745cf6014adfb5e95ddc33dd32dd',
   },
 ];
