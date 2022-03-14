@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import RecruitingBanner from '@views/MainPage/RecruitingBanner';
 import { useWindowScroll } from '@utils/hooks/useWindow';
 import { motion } from 'framer-motion';
 import cc from 'classcat';
@@ -7,7 +8,6 @@ import S from './styles.module.scss';
 import IMG_LOGO from '@resources/images/logo.png';
 import IMG_LOGO_TITLE from '@resources/svg/logo-title.svg';
 import { collectGaEvent } from '@utils/google';
-import RecruitingBanner from '../RecruitingBanner';
 
 const useAnimatedHeader = () => {
   const [isVisible, setIsVisible] = useState(true);
