@@ -2,6 +2,8 @@
 @import 'mixin';
 
 .Container {
+  padding-top: 128px;
+
   @include mobile {
     padding-top: 80px;
   }
