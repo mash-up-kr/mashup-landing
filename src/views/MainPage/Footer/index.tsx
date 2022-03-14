@@ -33,27 +33,20 @@ const FOOTER_ITEMS = [
     url: 'https://www.instagram.com/official_mashup_/',
     icon: IC_INSTA,
   },
-]
-
+];
 
 const Footer = () => (
-<footer
-  className={ S.Container }
->
-  <img src={ IMG_LOGO } alt='매쉬업 로고' className={ S.Logo } />
-  <div className={ S.IconWrap }>
-    {
-      FOOTER_ITEMS.map(({ name, url, icon }) => (
-        <a href={ url } key={ name } target='_blank' rel='noreferrer'>
-          <img src={ icon } alt={ name } />
+  <footer className={S.Container}>
+    <img src={IMG_LOGO} alt="매쉬업 로고" className={S.Logo} />
+    <div className={S.IconWrap}>
+      {FOOTER_ITEMS.map(({ name, url, icon }) => (
+        <a href={url} key={name} target="_blank" rel="noreferrer">
+          <img src={icon} alt={name} />
         </a>
-      ))
-    }
-  </div>
-  <p className={ S.Description }>
-    © Mash-Up. 2021 All rights reserved
-  </p>
-</footer>
+      ))}
+    </div>
+    <p className={S.Description}>© Mash-Up. 2022 All rights reserved</p>
+  </footer>
 );
 
 export default Footer;
