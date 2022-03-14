@@ -10,90 +10,85 @@ import { collectGaEvent } from '@utils/google';
 interface Props {
   animation?: boolean;
   talks: TalkItem[];
-};
+}
 
 export const Talk: React.FC<Props> = ({ animation = false, talks }: Props) => {
   const handleLinkClick = (link?: string, comment?: string) => {
-    if(!link) {
+    if (!link) {
       return;
     }
 
-    if(comment) {
+    if (comment) {
       collectGaEvent(`Talk_${comment}_클릭`);
     }
-    
+
     window.open(link, '_blank');
-  }
+  };
 
   return (
-    <ul className={ S.Container }>
-      {
-        talks.map(({ commentType, comment, profile, side, link }) => {
-          const options = animation ? {
-            ['data-aos']: side === 'end' ? 'zoom-in-left' : 'zoom-in-right',
-            ['data-aos-duration']: '800'
-          } : {}
+    <ul className={S.Container}>
+      {talks.map(({ commentType, comment, profile, side, link }, index) => {
+        const options = animation
+          ? {
+              ['data-aos']: side === 'end' ? 'zoom-in-left' : 'zoom-in-right',
+              ['data-aos-duration']: '800',
+            }
+          : {};
 
-          return (
-            side === 'divide' ? (
-              <div className={ S.Divide } />
-            ) : (
-              <li
-                key={ comment }
-                className={ cc([
-                  S.TalkWrap,
+        return side === 'divide' ? (
+          <li className={S.Divide} key={index} aria-hidden />
+        ) : (
+          <li
+            key={index}
+            className={cc([
+              S.TalkWrap,
+              {
+                [S.EndSide]: side === 'end',
+                [S.EndSideImg]: commentType === 'emoji',
+              },
+            ])}
+            {...options}
+          >
+            {side === 'start' && (
+              <img
+                className={cc([
+                  S.Profile,
                   {
-                    [S.EndSide]: side === 'end',
-                    [S.EndSideImg]: commentType === 'emoji',
-                  }
+                    [S.ProfileHide]: !profile,
+                  },
                 ])}
-                { ...options }
-              >
-                {
-                  side === 'start' && (
-                    <img
-                      className={ cc([
-                        S.Profile,
-                        {
-                          [S.ProfileHide]: !profile,
-                        }
-                      ]) }
-                      src={ IMG_PROFILE }
-                      alt='프로필'
-                    />
-                  )
-                }
-                { commentType === 'img' ? (
-                  <img
-                    className={ cc([
-                      S.TalkCommentImage,
-                      {
-                        [S.TalkEndSide]: side === 'end',
-                      }
-                    ]) }
-                    src={comment}
-                    alt={comment}
-                  />
-                ) : (
-                  <p
-                    className={ cc([
-                      S.TalkComment,
-                      {
-                        [S.TalkEndSide]: side === 'end',
-                        [S.TalkCommentEmoji]: commentType === 'emoji',
-                        [S.TalkCommentLink]: commentType === 'link',
-                      }
-                    ]) }
-                    onClick={ () => handleLinkClick(link, comment) }
-                    dangerouslySetInnerHTML={{ __html: comment }}
-                  >
-                  </p>
-                )}
-              </li>
-            )
-          )
-        })
-      }
+                src={IMG_PROFILE}
+                alt="프로필"
+              />
+            )}
+            {commentType === 'img' ? (
+              <img
+                className={cc([
+                  S.TalkCommentImage,
+                  {
+                    [S.TalkEndSide]: side === 'end',
+                  },
+                ])}
+                src={comment}
+                alt={comment}
+              />
+            ) : (
+              <p
+                className={cc([
+                  S.TalkComment,
+                  {
+                    [S.TalkEndSide]: side === 'end',
+                    [S.TalkCommentEmoji]: commentType === 'emoji',
+                    [S.TalkCommentLink]: commentType === 'link',
+                  },
+                ])}
+                onClick={() => handleLinkClick(link, comment)}
+                dangerouslySetInnerHTML={{ __html: comment }}
+              ></p>
+            )}
+          </li>
+        );
+      })}
     </ul>
   );
-}
+};
