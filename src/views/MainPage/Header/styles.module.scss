@@ -1,14 +1,19 @@
-@import "variables";
-@import "mixin";
+@import 'variables';
+@import 'mixin';
 
 $offset-y: 50px;
 
-.Header {
-  box-sizing: content-box;
+.HeaderContainer {
   position: fixed;
   top: -$offset-y;
   left: 0;
   right: 0;
+  margin: 0 auto;
+  z-index: 1101;
+}
+
+.Header {
+  box-sizing: content-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,12 +21,11 @@ $offset-y: 50px;
   margin: 0 auto;
   padding: $offset-y 48px 0 48px;
   background-color: $page-bg-first-color;
-  z-index: 1101;
 
   .logo {
     display: flex;
     justify-content: flex-start;
-    align-items: center
+    align-items: center;
   }
 
   .LogoImage + .LogoImage {

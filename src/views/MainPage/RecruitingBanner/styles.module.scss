@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'mixin';
+
+.Container {
+  background: linear-gradient(90.31deg, #6244ff 0.57%, #f13f5f 80.57%);
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Message {
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 30px;
+    line-height: 1.5;
+  }
+
+  .ApplyLink {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 2px solid $page-text-first-color;
+    color: $page-text-first-color;
+    padding: 5px 16px 5px 20px;
+    border-radius: 23px;
+    line-height: 1.5;
+    letter-spacing: -0.8px;
+    text-decoration: none;
+    font-size: 24px;
+
+    img {
+      margin-left: 7px;
+    }
+  }
+
+  @include mobile {
+    height: 80px;
+
+    .Message {
+      font-size: 16px;
+      margin-right: 18px;
+      .Season {
+        display: block;
+      }
+    }
+
+    .ApplyLink {
+      padding: 5px 11px 5px 12px;
+      font-size: 13px;
+      font-weight: 400;
+      border: 1px solid $page-text-first-color;
+
+      img {
+        width: 18px;
+        height: 12px;
+        margin-left: 2px;
+      }
+    }
+  }
+}
