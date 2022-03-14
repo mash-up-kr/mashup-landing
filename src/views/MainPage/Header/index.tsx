@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import RecruitingBanner from '@views/MainPage/RecruitingBanner';
 import { useWindowScroll } from '@utils/hooks/useWindow';
 import { motion } from 'framer-motion';
 import cc from 'classcat';
@@ -42,19 +43,22 @@ const Header = () => {
 
   return (
     <motion.div
-      className={ cc([ S.Header, isVisible && S.isVisible]) }
+      className={ cc([ S.HeaderContainer, isVisible && S.isVisible]) }
       animate={{ y: isVisible ? '0%' : '-100%' }}
     >
-      <a className={ S.logo } href='/'>
-        <img className={ S.LogoImage } src={ IMG_LOGO } alt='매쉬업 로고' width={ 32 } height={ 32 }/>
-        <img className={ S.LogoImage } src={ IMG_LOGO_TITLE } alt='매쉬업 로고'/>
-      </a>
-      <div className={ S.menu }>
-        <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'program') }>program</a>
-        <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'team') }>team</a>
-        <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'works') }>works</a>
-        <a className={ S.MenuButton } href='#' onClick={ (event) => onNavigateTo(event, 'joinus') }>JOIN US! →</a>
+      <div className={S.Header}>
+        <a className={ S.logo } href='/'>
+          <img className={ S.LogoImage } src={ IMG_LOGO } alt='매쉬업 로고' width={ 32 } height={ 32 }/>
+          <img className={ S.LogoImage } src={ IMG_LOGO_TITLE } alt='매쉬업 로고'/>
+        </a>
+        <div className={ S.menu }>
+          <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'program') }>program</a>
+          <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'team') }>team</a>
+          <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'works') }>works</a>
+          <a className={ S.MenuButton } href='#' onClick={ (event) => onNavigateTo(event, 'joinus') }>JOIN US! →</a>
+        </div>
       </div>
+      <RecruitingBanner/>
     </motion.div>
   )
 }

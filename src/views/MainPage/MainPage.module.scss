@@ -1,5 +1,8 @@
-@import "variables";
-@import "mixin";
+@import 'variables';
+@import 'mixin';
 
 .Container {
+  @include mobile {
+    padding-top: 80px;
+  }
 }
