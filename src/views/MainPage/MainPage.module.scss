@@ -2,9 +2,9 @@
 @import 'mixin';
 
 .Container {
-  padding-top: 128px;
+  padding-top: 5vh;
 
-  @include mobile {
-    padding-top: 80px;
+  @include tablet {
+    padding-top: 10%;
   }
 }
