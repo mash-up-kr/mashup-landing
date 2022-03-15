@@ -71,7 +71,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'start',
       commentType: 'text',
-      comment: `'🙂스프링팀에 대해 궁금해요!!'`,
+      comment: `스프링팀은 어떤 팀인가요? 😮`,
       profile: true,
     },
     {
