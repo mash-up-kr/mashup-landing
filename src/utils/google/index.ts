@@ -1,7 +1,7 @@
 import ReactGA from 'react-ga';
 
 const initializeGa = (): void => {
-  ReactGA.initialize('G-WMN7DVVS6F');
+  ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS);
   if (window) {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }
