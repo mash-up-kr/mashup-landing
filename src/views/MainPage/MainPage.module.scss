@@ -2,9 +2,4 @@
 @import 'mixin';
 
 .Container {
-  padding-top: 5vh;
-
-  @include tablet {
-    padding-top: 10%;
-  }
 }
