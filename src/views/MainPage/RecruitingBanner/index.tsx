@@ -2,6 +2,7 @@ import React from 'react'
 import S from './styles.module.scss';
 import RECRUIT_ARROW from '@resources/svg/recruit_arrow.svg';
 
+// TODO:(하준) 현재 아무곳에서도 사용하지 않고 있음 13기때 배너를 이용할거라면 리팩토링 후 사용
 const RecruitingBanner:React.FC = () => {
   return (
     <div className={S.Container}>
@@ -16,4 +17,4 @@ const RecruitingBanner:React.FC = () => {
   )
 }
 
-export default RecruitingBanner
+export default RecruitingBanner;

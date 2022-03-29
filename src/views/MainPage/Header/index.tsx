@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import RecruitingBanner from '@views/MainPage/RecruitingBanner';
 import { useWindowScroll } from '@utils/hooks/useWindow';
 import { motion } from 'framer-motion';
 import cc from 'classcat';
@@ -58,7 +57,6 @@ const Header = () => {
           <a className={ S.MenuButton } href='#' onClick={ (event) => onNavigateTo(event, 'joinus') }>JOIN US! →</a>
         </div>
       </div>
-      <RecruitingBanner/>
     </motion.div>
   )
 }
