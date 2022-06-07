@@ -1,8 +1,23 @@
+@import "mixin";
+
 .sponsorContainer {
   display: flex;
   justify-content: center;
   margin: {
     top: 160px;
     bottom: 240px;
+  }
+
+  @include mobile {
+    margin: {
+      top: 80px;
+      bottom: 156px;
+    }
+  }
+}
+
+.sponsorLogo {
+  @include mobile {
+    width: 70%;
   }
 }

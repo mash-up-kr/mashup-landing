@@ -15,7 +15,9 @@ const JoinusSection: React.FC<Props> = () => (
       </>
     ) }
   >
-    <div className={S.sponsorContainer}><img src={NaverCloud} alt="Naver Cloud Platform"/></div>
+    <div className={S.sponsorContainer}>
+      <img src={NaverCloud} alt="Naver Cloud Platform" className={S.sponsorLogo}/>
+    </div>
   </Section>
 );
 
