@@ -55,6 +55,7 @@ const Header = () => {
           <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'team') }>team</a>
           <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'works') }>works</a>
           <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'sponsor') }>sponsor</a>
+          <a className={ S.MenuButton } href='https://recruit.mash-up.kr'>JOIN US! →</a>
         </div>
       </div>
     </motion.div>
