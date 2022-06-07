@@ -6,6 +6,7 @@ html, body {
   background: $page-bg-first-color;
   color: $page-text-first-color;
   overflow-x: hidden;
+  user-select: none;
 }
 
 ::selection {

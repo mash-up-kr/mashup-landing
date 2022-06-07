@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { useWindowScroll } from '@utils/hooks/useWindow';
 import { motion } from 'framer-motion';
 import cc from 'classcat';
@@ -54,7 +54,8 @@ const Header = () => {
           <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'program') }>program</a>
           <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'team') }>team</a>
           <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'works') }>works</a>
-          <a className={ S.MenuButton } href='#' onClick={ (event) => onNavigateTo(event, 'joinus') }>JOIN US! →</a>
+          <a className={ S.MenuItem } href='#' onClick={ (event) => onNavigateTo(event, 'sponsor') }>sponsor</a>
+          <a className={ S.MenuButton } href='https://recruit.mash-up.kr'>JOIN US! →</a>
         </div>
       </div>
     </motion.div>
