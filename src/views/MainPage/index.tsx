@@ -6,7 +6,7 @@ import S from "./MainPage.module.scss";
 import PlaySection from "@views/MainPage/PlaySection";
 import TeamSection from "@views/MainPage/TeamSection";
 import ProjectSection from "@views/MainPage/ProjectSection";
-import JoinusSection from "@views/MainPage/JoinusSection";
+import SponsorSection from "@views/MainPage/SponsorSection";
 import HeroSection from "@views/MainPage/HeroSection";
 import Header from "@views/MainPage/Header";
 import Footer from "@views/MainPage/Footer";
@@ -49,7 +49,7 @@ const MainPage: React.FC<Props> = () => {
       <PlaySection />
       <TeamSection />
       <ProjectSection />
-      <JoinusSection />
+      <SponsorSection />
       <Footer />
     </div>
   );
