@@ -5,9 +5,9 @@ import NaverCloud from '@resources/svg/naver_cloud.svg'
 
 interface Props {}
 
-const JoinusSection: React.FC<Props> = () => (
+const PartnershipSection: React.FC<Props> = () => (
   <Section
-    sectionId='sponsor'
+    sectionId='partnership'
     title='매시업과 함께 하는 기업'
     subTitle={ (
       <>
@@ -21,4 +21,4 @@ const JoinusSection: React.FC<Props> = () => (
   </Section>
 );
 
-export default JoinusSection;
+export default PartnershipSection;
