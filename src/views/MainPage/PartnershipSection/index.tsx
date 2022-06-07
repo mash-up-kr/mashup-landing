@@ -12,7 +12,12 @@ const PartnershipSection: React.FC<Props> = () => (
     subTitle='매시업과 함께하는 파트너 후원사를 소개합니다.'
   >
     <div className={S.sponsorContainer}>
-      <img src={NaverCloud} alt='Naver Cloud Platform' className={S.sponsorLogo}/>
+      <img src={NaverCloud}
+           alt='Naver Cloud Platform'
+           className={S.sponsorLogo}
+           data-aos='fade-up'
+           data-aos-duration='600'
+      />
     </div>
   </Section>
 );
