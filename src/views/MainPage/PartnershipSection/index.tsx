@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '@components/Section/Section';
 import S from './styles.module.scss'
-import NaverCloud from '@resources/svg/naver_cloud.svg'
+import naverCloud from '@resources/images/naver_cloud.png'
 
 interface Props {}
 
@@ -12,7 +12,7 @@ const PartnershipSection: React.FC<Props> = () => (
     subTitle='매시업과 함께하는 파트너 후원사를 소개합니다.'
   >
     <div className={S.sponsorContainer}>
-      <img src={NaverCloud}
+      <img src={naverCloud}
            alt='Naver Cloud Platform'
            className={S.sponsorLogo}
            data-aos='fade-up'

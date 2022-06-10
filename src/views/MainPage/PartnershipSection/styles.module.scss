@@ -17,6 +17,8 @@
 }
 
 .sponsorLogo {
+  width: 720px;
+
   @include mobile {
     width: 70%;
   }
