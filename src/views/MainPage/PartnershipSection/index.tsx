@@ -15,14 +15,15 @@ interface Parter {
   url: string;
 }
 
+const partners: Parter[] = [
+  { name: 'naver cloud', image: naverCloud, url: 'https://www.ncloud.com' },
+  { name: 'opgg', image: opgg, url: 'https://www.op.gg' },
+  { name: 'hyper connect', image: hyperConnect, url: 'https://hyperconnect.com/ko' },
+  { name: 'wanted', image: wanted, url: 'https://www.wanted.co.kr' },
+  { name: 'toss', image: toss, url: 'https://toss.im' },
+];
+
 const PartnershipSection: React.FC<Props> = () => {
-  const partners: Parter[] = [
-    { name: 'naver cloud', image: naverCloud, url: 'https://www.ncloud.com' },
-    { name: 'opgg', image: opgg, url: 'https://www.op.gg' },
-    { name: 'hyper connect', image: hyperConnect, url: 'https://hyperconnect.com/ko' },
-    { name: 'wanted', image: wanted, url: 'https://www.wanted.co.kr' },
-    { name: 'toss', image: toss, url: 'https://toss.im' },
-  ];
   return (
     <Section
       sectionId="partnership"
