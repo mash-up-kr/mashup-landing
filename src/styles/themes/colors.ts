@@ -9,4 +9,4 @@ export const colors = {
   talkEndSide: '#0078ff',
 } as const;
 
-export type ColorsType = typeof colors;
+export type ColorsTheme = typeof colors;
