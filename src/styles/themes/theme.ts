@@ -1,5 +1,6 @@
-import { colors } from './index';
+import { colors, breakPoint } from './index';
 
 export const theme = {
   colors,
+  breakPoint,
 };
