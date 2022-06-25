@@ -133,11 +133,12 @@ export const resetCss = css`
 
   body {
     color: #ffffff;
-    font-family: SpoqaHanSansNeo, sans-serif;
-    line-height: 1;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', Sans-serif;
+    line-height: 1.15;
     background-color: #000000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    user-select: none;
   }
 
   body,
