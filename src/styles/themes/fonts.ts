@@ -1,24 +1,45 @@
 import { css } from '@emotion/react';
 
 export const fonts = {
-  sectionTitleFont: css`
-    font-size: 3.6rem;
-  `,
-  sectionSubTitle: css`
-    font-size: 2rem;
-  `,
-  sectionTitleMobile: css`
-    font-size: 3.6rem;
-  `,
-  sectionSubTitleMobile: css`
-    font-size: 1.8rem;
-  `,
-  sectionTitleIphone: css`
-    font-size: 2.4rem;
-  `,
-  sectionSubTitleIphone: css`
-    font-size: 1.4rem;
-  `,
+  kr: {
+    bold(fontSize: number) {
+      return css`
+        font-size: ${fontSize}rem;
+        font-family: 'Spoqa Han Sans';
+        font-weight: 700;
+      `;
+    },
+    medium(fontSize: number) {
+      return css`
+        font-size: ${fontSize}rem;
+        font-family: 'Spoqa Han Sans';
+        font-weight: 500;
+      `;
+    },
+    regular(fontSize: number) {
+      return css`
+        font-size: ${fontSize}rem;
+        font-family: 'Spoqa Han Sans';
+        font-weight: 400;
+      `;
+    },
+  },
+  en: {
+    extraBold(fontSize: number) {
+      return css`
+        font-size: ${fontSize}rem;
+        font-family: Gilroy;
+        font-weight: 800;
+      `;
+    },
+    light(fontSize: number) {
+      return css`
+        font-size: ${fontSize}rem;
+        font-family: Gilroy;
+        font-weight: 300;
+      `;
+    },
+  },
 } as const;
 
 export type FontsTheme = typeof fonts;
