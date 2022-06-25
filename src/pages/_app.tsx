@@ -3,10 +3,17 @@ import Head from 'next/head';
 import '@styles/main.scss';
 import ICON from '@resources/images/icon.png';
 import THOMB from '@resources/images/thomb.png';
+import { globalStyles } from '@styles/index';
+import { css, Global } from '@emotion/react';
 
-function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
     <>
+      <Global
+        styles={css`
+          ${globalStyles}
+        `}
+      />
       <Head>
         <meta charSet="UTF-8" />
         <meta
@@ -61,6 +68,6 @@ function App({ Component, pageProps }) {
       <Component {...pageProps} />
     </>
   );
-}
+};
 
 export default App;
