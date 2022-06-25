@@ -12,4 +12,7 @@ module.exports = withImages({
   images: {
     disableStaticImages: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 });
