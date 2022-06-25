@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import '@styles/main.scss';
 import ICON from '@resources/images/icon.png';
 import THOMB from '@resources/images/thomb.png';
 import { globalStyles, theme } from '@styles/index';
