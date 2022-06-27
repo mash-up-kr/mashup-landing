@@ -1,10 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
-import '@styles/main.scss';
 import ICON from '@resources/images/icon.png';
 import THOMB from '@resources/images/thomb.png';
-import { globalStyles } from '@styles/index';
-import { css, Global } from '@emotion/react';
+import { globalStyles, theme } from '@styles/index';
+import { css, Global, ThemeProvider } from '@emotion/react';
 
 const App = ({ Component, pageProps }) => {
   return (
@@ -65,7 +64,9 @@ const App = ({ Component, pageProps }) => {
           type="text/css"
         />
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 };

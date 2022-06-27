@@ -109,7 +109,8 @@ export const resetCss = css`
   }
 
   ol,
-  ul {
+  ul,
+  li {
     list-style: none;
   }
 
@@ -179,5 +180,10 @@ export const resetCss = css`
 
   path {
     pointer-events: none;
+  }
+
+  ::selection {
+    background: #06e8d3;
+    color: #ffffff;
   }
 `;
