@@ -1,11 +1,12 @@
-@import "mixin";
+@import 'mixin';
 
-.sponsorContainer {
-  display: flex;
-  justify-content: center;
-  margin: {
-    top: 160px;
-    bottom: 240px;
+.partnershipContainer {
+  width: 1060px;
+  margin: 80px auto 110px;
+
+  @include pc {
+    width: 100%;
+    text-align: center;
   }
 
   @include mobile {
@@ -16,10 +17,28 @@
   }
 }
 
-.sponsorLogo {
-  width: 720px;
+.partnerLink {
+  display: inline-block;
+  margin-bottom: 20px;
 
-  @include mobile {
-    width: 70%;
+  &:nth-child(odd) {
+    margin-right: 20px;
+  }
+
+  @include pc {
+    margin-right: 0;
+  }
+}
+
+.partnerLogo {
+  display: inline-block;
+  width: 520px;
+
+  @include tablet {
+    width: 460px;
+  }
+
+  @include iphone {
+    width: 280px;
   }
 }
