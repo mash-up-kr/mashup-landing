@@ -2,7 +2,7 @@
 
 .partnershipContainer {
   width: 1060px;
-  margin: 160px auto 220px;
+  margin: 80px auto 110px;
 
   @include pc {
     width: 100%;
@@ -33,10 +33,6 @@
 .partnerLogo {
   display: inline-block;
   width: 520px;
-
-  @include pc {
-    width: 700px;
-  }
 
   @include tablet {
     width: 460px;
