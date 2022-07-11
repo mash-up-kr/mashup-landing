@@ -1,11 +1,11 @@
 import React from 'react';
 import Section from '@components/Section/Section';
-import S from './styles.module.scss';
 import naverCloud from '@resources/svg/naver_cloud.svg';
-import hyperConnect from '@resources/images/hyper_connect.png';
+import hyperConnect from '@resources/svg/hyperconnect.svg';
 import opgg from '@resources/images/opgg.png';
 import wanted from '@resources/images/wanted.png';
 import toss from '@resources/images/toss.png';
+import S from './styles.module.scss';
 
 interface Props {}
 
