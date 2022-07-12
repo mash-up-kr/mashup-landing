@@ -18,8 +18,11 @@
 }
 
 .partnerLink {
+  position: relative;
   display: inline-block;
   margin-bottom: 20px;
+  width: 520px;
+  height: 160px;
 
   &:nth-child(odd) {
     margin-right: 20px;
@@ -28,17 +31,14 @@
   @include pc {
     margin-right: 0;
   }
-}
-
-.partnerLogo {
-  display: inline-block;
-  width: 520px;
 
   @include tablet {
     width: 460px;
+    height: 141.5px;
   }
 
   @include iphone {
     width: 280px;
+    height: 86.1px;
   }
 }

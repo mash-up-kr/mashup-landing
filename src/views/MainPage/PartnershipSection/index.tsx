@@ -5,6 +5,7 @@ import hyperConnect from '@resources/svg/hyperconnect.svg';
 import opgg from '@resources/images/opgg.png';
 import wanted from '@resources/images/wanted.png';
 import toss from '@resources/images/toss.png';
+import Image from 'next/image';
 import S from './styles.module.scss';
 
 interface Props {}
@@ -40,10 +41,10 @@ const PartnershipSection: React.FC<Props> = () => {
               className={S.partnerLink}
               key={`partner-${name}-${index}`}
             >
-              <img
+              <Image
                 src={image}
                 alt={name}
-                className={S.partnerLogo}
+                layout="fill"
                 data-aos="fade-up"
                 data-aos-duration="600"
               />
