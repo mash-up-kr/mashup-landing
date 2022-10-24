@@ -1,11 +1,11 @@
 import React from 'react';
 import Section from '@components/Section/Section';
-import S from './styles.module.scss';
 import naverCloud from '@resources/svg/naver_cloud.svg';
-import hyperConnect from '@resources/images/hyper_connect.png';
 import opgg from '@resources/images/opgg.png';
 import wanted from '@resources/images/wanted.png';
 import toss from '@resources/images/toss.png';
+import Image from 'next/image';
+import S from './styles.module.scss';
 
 interface Props {}
 
@@ -18,7 +18,6 @@ interface Parter {
 const partners: Parter[] = [
   { name: 'naver cloud', image: naverCloud, url: 'https://www.ncloud.com' },
   { name: 'opgg', image: opgg, url: 'https://www.op.gg' },
-  { name: 'hyper connect', image: hyperConnect, url: 'https://hyperconnect.com/ko' },
   { name: 'wanted', image: wanted, url: 'https://www.wanted.co.kr' },
   { name: 'toss', image: toss, url: 'https://toss.im' },
 ];
@@ -40,10 +39,10 @@ const PartnershipSection: React.FC<Props> = () => {
               className={S.partnerLink}
               key={`partner-${name}-${index}`}
             >
-              <img
+              <Image
                 src={image}
                 alt={name}
-                className={S.partnerLogo}
+                layout="fill"
                 data-aos="fade-up"
                 data-aos-duration="600"
               />
