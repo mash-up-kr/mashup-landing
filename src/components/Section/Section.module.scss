@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixin";
+@import 'variables';
+@import 'mixin';
 
 .Container {
   width: 100%;
@@ -18,7 +18,6 @@
   width: 100%;
   padding: 160px 0 120px;
 
-
   @include mobile {
     padding: 100px 0 80px;
   }
@@ -33,7 +32,6 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  position: -webkit-sticky;
   background: $page-bg-first-color;
   z-index: 10;
 
