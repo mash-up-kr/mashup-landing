@@ -69,7 +69,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'img',
-      comment: 'spring-1.png',
+      comment: 'spring-1-min.png',
     },
     {
       side: 'end',
@@ -148,7 +148,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'img',
-      comment: 'node-1.png',
+      comment: 'node-1-min.png',
     },
   ],
   [WEB]: [
@@ -255,14 +255,14 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'img',
-      comment: 'android-1.png',
+      comment: 'android-1-min.png',
     },
   ],
   [IOS]: [
     {
       side: 'start',
       commentType: 'img',
-      comment: 'ios-1.gif',
+      comment: 'ios-1-min.gif',
     },
     {
       side: 'start',
@@ -272,7 +272,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'start',
       commentType: 'img',
-      comment: 'ios-1-1.gif',
+      comment: 'ios-1-1-min.gif',
     },
     {
       side: 'start',
@@ -282,7 +282,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'img',
-      comment: 'ios-2.gif',
+      comment: 'ios-2-min.gif',
     },
     {
       side: 'end',
