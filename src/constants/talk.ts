@@ -263,13 +263,21 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'start',
       commentType: 'img',
       comment: 'ios-1.gif',
-      profile: true,
     },
     {
       side: 'start',
       commentType: 'text',
-      comment: '우왕좌왕',
-      profile: true,
+      comment: '우왕',
+    },
+    {
+      side: 'start',
+      commentType: 'img',
+      comment: 'ios-1-1.gif',
+    },
+    {
+      side: 'start',
+      commentType: 'text',
+      comment: '좌왕',
     },
     {
       side: 'end',
