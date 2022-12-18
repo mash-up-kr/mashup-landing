@@ -31,6 +31,11 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     },
     {
       side: 'end',
+      commentType: 'img',
+      comment: 'design-1.jpeg',
+    },
+    {
+      side: 'end',
       commentType: 'text',
       comment: `안녕하세요😄 Mash-Up 공식 요정 프로덕트 디자인팀이에요💪`,
     },
@@ -65,6 +70,9 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       commentType: 'text',
       comment: `스프링팀은 어떤 팀인가요? 😮`,
       profile: true,
+    },
+    {
+      side: 'divide',
     },
     {
       side: 'end',
@@ -108,6 +116,9 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       commentType: 'text',
       comment: '🤔 Node.js 팀은 어떻게 진행되나요?',
       profile: true,
+    },
+    {
+      side: 'divide',
     },
     {
       side: 'end',
@@ -219,6 +230,9 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       commentType: 'text',
       comment: '🙂 Android팀은 어떻게 활동하나요?',
       profile: true,
+    },
+    {
+      side: 'divide',
     },
     {
       side: 'end',
