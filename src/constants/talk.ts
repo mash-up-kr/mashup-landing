@@ -31,6 +31,11 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     },
     {
       side: 'end',
+      commentType: 'img',
+      comment: 'design-1.jpeg',
+    },
+    {
+      side: 'end',
       commentType: 'text',
       comment: `안녕하세요😄 Mash-Up 공식 요정 프로덕트 디자인팀이에요💪`,
     },
@@ -67,9 +72,12 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       profile: true,
     },
     {
+      side: 'divide',
+    },
+    {
       side: 'end',
       commentType: 'img',
-      comment: 'spring-1.png',
+      comment: 'spring-1-min.png',
     },
     {
       side: 'end',
@@ -110,6 +118,9 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       profile: true,
     },
     {
+      side: 'divide',
+    },
+    {
       side: 'end',
       commentType: 'text',
       comment: '안녕하세요! Mash-Up의 막둥이팀 Node팀을 소개합니다!',
@@ -148,69 +159,52 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'img',
-      comment: 'node-1.png',
+      comment: 'node-1-min.png',
     },
   ],
   [WEB]: [
     {
+      side: 'end',
+      commentType: 'text',
+      comment: 'Web이 뭐라고 생각하세요?',
+    },
+    {
       side: 'start',
       commentType: 'text',
-      comment: `<i>"왜 울었는데...."</i>`,
+      comment: '웹이요? 디자인/서버와의 호흡, 화합…',
       profile: true,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `<i>"......양파 썰다가"</i>`,
-    },
-    {
-      side: 'start',
-      commentType: 'text',
-      comment: `<i>"왜 울었냐고"</i>`,
-      profile: true,
+      comment: '아니?',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `<i>"양파 때문이라고 대답했어"</i>`,
-    },
-    {
-      side: 'start',
-      commentType: 'text',
-      comment: `<i>"Web이 양파냐...."</i>`,
-      profile: true,
+      comment: '🎼🎹🥁🎷🎺 샵↘빱↗‼️~뚜비두밥↘~두비두비뚜비두바↗압↘~ 🎻🎹🥁🎷🎺',
     },
     {
       side: 'end',
       commentType: 'img',
-      comment: 'web.jpeg',
+      comment: 'web-1-min.gif',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `안녕하세요~🙌 &nbsp Mash-up의 떠오르는 태양 웹팀이에요! ☀️`,
+      comment: `안녕하세요~!! Mash-Up의 슈퍼🎖️스타 Web팀입니다!! 🌝
+      명불허전 자타공인 웹 장인들🧘‍♂️과 함께 성장하실 분을 찾습니다~!`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `저희 웹팀에서는 세미나를 통한 지식공유부터 웹 기술과 관련된 스터디, 타 플랫폼과 협업하여 진행하는 포트폴리오 스터디 등의 다양한 활동들을 통해 꾸준한 성장을 추구하고 있어요!`,
+      comment: `웹팀에서는 세미나를 통한 개발 지식 공유부터 웹 기술과 관련된 스터디 및 블로깅, 타 플랫폼과 협업하여 진행하는 프로젝트, 서로의 고민과 견해를 나눌 수 있는 테크톡 등 다양한 활동들을 통해 꾸준한 성장을 추구하고 있습니다! 👀 💛🧡`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `하지만 걱정하지 마세요 노는데도 <strong style='color: red'>진심이니까</strong>
-      모각코, 게임, 회식 등 코로나 방역 수칙을 지키는 선에서 친목도 아주 탄탄하게 다지고 있답니다 🥰
-      `,
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `Web때문에 울고 웃으며 함께 성장해나갈 바로 당신!! 망설이지 말고 지원 Go Go~! 😎`,
-    },
-    {
-      side: 'end',
-      commentType: 'emoji',
-      comment: '🙌🔥',
+      comment: `네트워킹에도 진심인 웹팀…🥺 다양한 컨퍼런스, 행사 같이 갈 친구도 이제 고민 걱정 NONO~ 🤫🛑 열정적인 사람들과 세상에서 제일 알찬 시간을 보낼 수 있는 기회!
+      Web is waiting for Y.O.U.`,
     },
   ],
   [ANDROID]: [
@@ -219,6 +213,9 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       commentType: 'text',
       comment: '🙂 Android팀은 어떻게 활동하나요?',
       profile: true,
+    },
+    {
+      side: 'divide',
     },
     {
       side: 'end',
@@ -255,26 +252,34 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'img',
-      comment: 'android-1.png',
+      comment: 'android-1-min.png',
     },
   ],
   [IOS]: [
     {
       side: 'start',
       commentType: 'img',
-      comment: 'ios-1.gif',
-      profile: true,
+      comment: 'ios-1-min.gif',
     },
     {
       side: 'start',
       commentType: 'text',
-      comment: '우왕좌왕',
-      profile: true,
+      comment: '우왕',
+    },
+    {
+      side: 'start',
+      commentType: 'img',
+      comment: 'ios-1-1-min.gif',
+    },
+    {
+      side: 'start',
+      commentType: 'text',
+      comment: '좌왕',
     },
     {
       side: 'end',
       commentType: 'img',
-      comment: 'ios-2.gif',
+      comment: 'ios-2-min.gif',
     },
     {
       side: 'end',
