@@ -169,6 +169,9 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       comment: 'Web이 뭐라고 생각하세요?',
     },
     {
+      side: 'divide',
+    },
+    {
       side: 'start',
       commentType: 'text',
       comment: '웹이요? 디자인/서버와의 호흡, 화합…',
@@ -181,13 +184,13 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     },
     {
       side: 'end',
-      commentType: 'text',
-      comment: '🎼🎹🥁🎷🎺 샵↘빱↗‼️~뚜비두밥↘~두비두비뚜비두바↗압↘~ 🎻🎹🥁🎷🎺',
+      commentType: 'img',
+      comment: 'web-1-min.gif',
     },
     {
       side: 'end',
-      commentType: 'img',
-      comment: 'web-1-min.gif',
+      commentType: 'text',
+      comment: '🎼🎹🥁🎷🎺 샵↘빱↗‼️~뚜비두밥↘~두비두비뚜비두바↗압↘~ 🎻🎹🥁🎷🎺',
     },
     {
       side: 'end',
