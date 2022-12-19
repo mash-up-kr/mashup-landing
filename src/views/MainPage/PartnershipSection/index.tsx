@@ -26,8 +26,8 @@ const PartnershipSection: React.FC<Props> = () => {
   return (
     <Section
       sectionId="partnership"
-      title="매시업과 함께 하는 기업"
-      subTitle="매시업과 함께하는 파트너 후원사를 소개합니다."
+      title="매쉬업과 함께 하는 기업"
+      subTitle="매쉬업과 함께하는 파트너 후원사를 소개합니다."
     >
       <div className={S.partnershipContainer}>
         {partners.map(({ name, image, url }, index) => {
