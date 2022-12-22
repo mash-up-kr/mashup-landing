@@ -6,17 +6,17 @@ const RecruitingBanner: React.FC = () => {
   const nowDate = new Date();
 
   const diffMs = recruitStartDate.valueOf() - nowDate.valueOf();
-  const remaningRecruitDate = Math.ceil(diffMs / 1000 / 60 / 60 / 24);
+  const remainingRecruitDate = Math.ceil(diffMs / 1000 / 60 / 60 / 24);
 
   return (
-    <div className={S.Container}>
-      <span className={S.Message}>
-        <span className={S.Season}>Mash-Up 13기</span> 리쿠르팅 Coming Soon
-      </span>
-      <a className={S.ApplyLink} href="https://recruit.mash-up.kr" target="_blank" rel="noreferrer">
-        D-{remaningRecruitDate}
-      </a>
-    </div>
+    <a href="https://recruit.mash-up.kr" target="_blank" rel="noreferrer">
+      <div className={S.Container}>
+        <span className={S.Message}>
+          <span className={S.Season}>Mash-Up 13기 리쿠르팅 </span>Coming Soon
+        </span>
+        <span className={S.DDay}>D-{remainingRecruitDate}</span>
+      </div>
+    </a>
   );
 };
 
