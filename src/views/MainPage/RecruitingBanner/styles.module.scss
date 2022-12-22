@@ -11,22 +11,23 @@
   .Message {
     font-size: 32px;
     font-weight: 700;
-    margin-right: 30px;
+    margin-right: 24px;
     line-height: 1.5;
   }
 
   .ApplyLink {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    border: 2px solid $page-text-first-color;
+    display: inline-block;
     color: $page-text-first-color;
-    padding: 5px 16px 5px 20px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 2px solid $page-text-first-color;
     border-radius: 23px;
-    line-height: 1.5;
-    letter-spacing: -0.8px;
+    padding: 6px 24px 8px 24px;
+    letter-spacing: -0.05em;
     text-decoration: none;
     font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
 
     img {
       margin-left: 7px;
