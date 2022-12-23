@@ -11,26 +11,23 @@
   .Message {
     font-size: 32px;
     font-weight: 700;
-    margin-right: 30px;
+    margin-right: 24px;
     line-height: 1.5;
   }
 
-  .ApplyLink {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    border: 2px solid $page-text-first-color;
+  .DDay {
+    display: inline-block;
     color: $page-text-first-color;
-    padding: 5px 16px 5px 20px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 2px solid $page-text-first-color;
     border-radius: 23px;
-    line-height: 1.5;
-    letter-spacing: -0.8px;
+    padding: 6px 24px 8px 24px;
+    letter-spacing: -0.05em;
     text-decoration: none;
     font-size: 24px;
-
-    img {
-      margin-left: 7px;
-    }
+    font-weight: 700;
+    line-height: 30px;
   }
 
   @include tablet {
@@ -38,19 +35,13 @@
 
     .Message {
       font-size: 18px;
-      margin-right: 12px;
+      margin-right: 16px;
     }
 
-    .ApplyLink {
-      padding: 5px 12px 5px 16px;
+    .DDay {
+      padding: 7px 16px 8px 16px;
       font-size: 14px;
-      font-weight: 400;
-
-      img {
-        width: 20px;
-        height: 12px;
-        margin-left: 7px;
-      }
+      line-height: 18px;
     }
   }
 
@@ -58,24 +49,9 @@
     height: 60px;
 
     .Message {
-      font-size: 15px;
-      font-weight: 400;
-      margin-right: 20px;
+      font-size: 14px;
       .Season {
         display: block;
-      }
-    }
-
-    .ApplyLink {
-      padding: 5px 11px 5px 12px;
-      font-size: 13px;
-      font-weight: 400;
-      border: 1px solid $page-text-first-color;
-
-      img {
-        width: 18px;
-        height: 12px;
-        margin-left: 2px;
       }
     }
   }
