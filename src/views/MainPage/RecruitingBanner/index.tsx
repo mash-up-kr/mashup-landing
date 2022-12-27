@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import RECRUIT_ARROW from '@resources/svg/recruit_arrow.svg';
 import S from './styles.module.scss';
 
 const RecruitingBanner: React.FC = () => {
-  const recruitStartDate = new Date('2022-12-28T01:00:00+09:00');
+  const dDayRef = useRef(null);
+
+  const recruitStartDate = new Date('2023-01-11T01:00:00+09:00');
   const nowDate = new Date();
 
   const diffMs = recruitStartDate.valueOf() - nowDate.valueOf();
   const remainingRecruitDate = Math.ceil(diffMs / 1000 / 60 / 60 / 24);
 
   const isRecruitingOpen = remainingRecruitDate <= 0;
+
+  useEffect(() => {
+    if (!dDayRef.current) return;
+    dDayRef.current.style.opacity = 1;
+  }, []);
 
   return isRecruitingOpen ? (
     <div className={S.RecruitOpen}>
@@ -27,7 +34,9 @@ const RecruitingBanner: React.FC = () => {
         <span className={S.Message}>
           <span className={S.Season}>Mash-Up 13기 리쿠르팅 </span>Coming Soon
         </span>
-        <span className={S.DDay}>D-{remainingRecruitDate}</span>
+        <span className={S.DDay} ref={dDayRef}>
+          D-{remainingRecruitDate}
+        </span>
       </div>
     </a>
   );

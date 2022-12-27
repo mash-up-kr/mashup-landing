@@ -28,6 +28,9 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+    transition: 1s;
+    opacity: 0;
+    letter-spacing: 0;
   }
 
   @include tablet {
