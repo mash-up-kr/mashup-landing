@@ -5,7 +5,7 @@ import S from './styles.module.scss';
 const RecruitingBanner: React.FC = () => {
   const dDayRef = useRef(null);
 
-  const recruitStartDate = new Date('2023-01-11T01:00:00+09:00');
+  const recruitStartDate = new Date('2023-01-11T00:00:00+09:00');
   const nowDate = new Date();
 
   const diffMs = recruitStartDate.valueOf() - nowDate.valueOf();
