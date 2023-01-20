@@ -3,7 +3,7 @@ import Section from '@components/Section/Section';
 import naverCloud from '@resources/svg/naver_cloud.svg';
 import opgg from '@resources/images/opgg.png';
 import wanted from '@resources/images/wanted.png';
-import toss from '@resources/images/toss.png';
+import toss from '@resources/images/toss_3x_min.png';
 import Image from 'next/image';
 import S from './styles.module.scss';
 
