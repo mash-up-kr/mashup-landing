@@ -7,7 +7,6 @@ import IMG_LOGO_TITLE from '@resources/svg/logo-title.svg';
 import { collectGaEvent } from '@utils/google';
 import LinkTo from '@components/LinkTo';
 import S from './styles.module.scss';
-import RecruitingBanner from '../RecruitingBanner';
 
 const useAnimatedHeader = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -92,8 +91,7 @@ const Header = () => {
             JOIN US! →
           </a>
         </div>
-      </div>{' '}
-      <RecruitingBanner />
+      </div>
     </motion.div>
   );
 };
