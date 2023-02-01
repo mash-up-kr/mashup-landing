@@ -33,7 +33,7 @@ $offset-y: 50px;
     margin-top: 8px;
   }
 
-  a {
+  button {
     font-size: 16px;
     font-weight: 600;
     &:not(:last-child) {
@@ -46,10 +46,13 @@ $offset-y: 50px;
   }
 
   .MenuItem {
+    padding: 0;
     font-size: 16px;
+    // font-family: inherit;
     font-weight: bold;
     color: $page-text-first-color;
-    text-decoration: none;
+    background: transparent;
+    border: 0;
   }
 
   .menuBtn {
