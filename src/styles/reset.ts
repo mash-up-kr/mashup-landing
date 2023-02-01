@@ -134,7 +134,6 @@ export const resetCss = css`
 
   body {
     color: #ffffff;
-    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', Sans-serif;
     line-height: 1.15;
     background-color: #000000;
     -webkit-font-smoothing: antialiased;
@@ -149,6 +148,7 @@ export const resetCss = css`
   body *::before,
   body *::after {
     box-sizing: border-box;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', Sans-serif;
   }
 
   a {
