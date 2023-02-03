@@ -5,8 +5,8 @@ import cc from 'classcat';
 import IMG_LOGO from '@resources/images/logo.png';
 import IMG_LOGO_TITLE from '@resources/svg/logo-title.svg';
 import { collectGaEvent } from '@utils/google';
+import LinkTo from '@components/LinkTo';
 import S from './styles.module.scss';
-import RecruitingBanner from '../RecruitingBanner';
 
 const useAnimatedHeader = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -49,27 +49,39 @@ const Header = () => {
       animate={{ y: isVisible ? '0%' : '-100%' }}
     >
       <div className={S.Header}>
-        <a className={S.logo} href="/">
-          <img className={S.LogoImage} src={IMG_LOGO} alt="매쉬업 로고" width={32} height={32} />
-          <img className={S.LogoImage} src={IMG_LOGO_TITLE} alt="매쉬업 로고" />
-        </a>
+        <LinkTo href="/" className={S.logo}>
+          <img className={S.LogoImage} src={IMG_LOGO} alt="" width={32} height={32} />
+          <img className={S.LogoImage} src={IMG_LOGO_TITLE} alt="Mash Up" />
+        </LinkTo>
         <div className={S.menu}>
-          <a className={S.MenuItem} href="#" onClick={(event) => onNavigateTo(event, 'program')}>
-            program
-          </a>
-          <a className={S.MenuItem} href="#" onClick={(event) => onNavigateTo(event, 'team')}>
-            team
-          </a>
-          <a className={S.MenuItem} href="#" onClick={(event) => onNavigateTo(event, 'works')}>
-            works
-          </a>
-          <a
+          <button
+            type="button"
             className={S.MenuItem}
-            href="#"
+            onClick={(event) => onNavigateTo(event, 'program')}
+          >
+            program
+          </button>
+          <button
+            type="button"
+            className={S.MenuItem}
+            onClick={(event) => onNavigateTo(event, 'team')}
+          >
+            team
+          </button>
+          <button
+            type="button"
+            className={S.MenuItem}
+            onClick={(event) => onNavigateTo(event, 'works')}
+          >
+            works
+          </button>
+          <button
+            type="button"
+            className={S.MenuItem}
             onClick={(event) => onNavigateTo(event, 'partnership')}
           >
             partners
-          </a>
+          </button>
           <a
             className={S.MenuButton}
             href="https://recruit.mash-up.kr"
@@ -79,8 +91,7 @@ const Header = () => {
             JOIN US! →
           </a>
         </div>
-      </div>{' '}
-      <RecruitingBanner />
+      </div>
     </motion.div>
   );
 };
