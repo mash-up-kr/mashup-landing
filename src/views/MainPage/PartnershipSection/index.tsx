@@ -4,6 +4,7 @@ import naverCloud from '@resources/svg/naver_cloud.svg';
 import opgg from '@resources/images/opgg.png';
 import wanted from '@resources/images/wanted.png';
 import toss from '@resources/images/toss_3x_min.png';
+import devcra from '@resources/images/devcra_3x_min.png';
 import Image from 'next/image';
 import S from './styles.module.scss';
 
@@ -17,6 +18,7 @@ interface Parter {
 
 const partners: Parter[] = [
   { name: 'naver cloud', image: naverCloud, url: 'https://www.ncloud.com' },
+  { name: 'devcra', image: devcra, url: 'https://devcra.com' },
   { name: 'opgg', image: opgg, url: 'https://www.op.gg' },
   { name: 'wanted', image: wanted, url: 'https://www.wanted.co.kr' },
   { name: 'toss', image: toss, url: 'https://toss.im' },
