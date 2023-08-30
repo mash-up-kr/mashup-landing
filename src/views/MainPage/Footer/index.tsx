@@ -1,11 +1,10 @@
-import S from './styles.module.scss';
-
 import IMG_LOGO from '@resources/images/full_logo.png';
 import IC_FB from '@resources/svg/ic_face.svg';
 import IC_TB from '@resources/svg/ic_tblog.svg';
 import IC_MAIL from '@resources/svg/ic_mail.svg';
 import IC_INSTA from '@resources/svg/ic_insta.svg';
 import IC_BE from '@resources/svg/ic_be.svg';
+import S from './styles.module.scss';
 
 const FOOTER_ITEMS = [
   {
@@ -45,7 +44,7 @@ const Footer = () => (
         </a>
       ))}
     </div>
-    <p className={S.Description}>© Mash-Up. 2022 All rights reserved</p>
+    <p className={S.Description}>© Mash-Up. 2023 All rights reserved</p>
   </footer>
 );
 
