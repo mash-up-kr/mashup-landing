@@ -44,7 +44,7 @@ const Footer = () => (
         </a>
       ))}
     </div>
-    <p className={S.Description}>© Mash-Up. 2023 All rights reserved</p>
+    <p className={S.Description}>© Mash-Up. 2024 All rights reserved</p>
   </footer>
 );
 
