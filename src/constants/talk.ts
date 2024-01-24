@@ -170,50 +170,74 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
   ],
   [WEB]: [
     {
-      side: 'end',
+      side: 'start',
       commentType: 'text',
-      comment: 'Web이 뭐라고 생각하세요?',
+      comment: 'Web 팀에 대해서 소개해주세요! 👀',
+      profile: true,
     },
     {
       side: 'divide',
     },
     {
-      side: 'start',
-      commentType: 'text',
-      comment: '웹이요? 디자인/서버와의 호흡, 화합…',
+      side: 'end',
+      commentType: 'img',
+      comment: 'web1-min.jpg',
       profile: true,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: '아니?',
+      comment: '9개.. 10개.. 🏋️‍♂️ 오호! 안녕 어서오렴~😎👋',
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: '우린 헬띠 건강미🦾 뿜뿜의 슈퍼 로켓🚀팀인 웹팀이야💝',
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: '우리와 함께 잃어버린 건강도 찾고💪, 내 키 2cm를 빼앗아간 거북목도 피고..💪',
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment:
+        '오래 앉아 있어서 대퇴이두가 많이 타이트 할텐데.. 폼롤링 하면서 Next.js App Router 이야기를 해볼까?',
+    },
+    {
+      side: 'start',
+      commentType: 'text',
+      comment: '무..무서워요..🥹',
+      profile: true,
     },
     {
       side: 'end',
       commentType: 'img',
-      comment: 'web-1-min.gif',
+      comment: 'web2-min.png',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: '🎼🎹🥁🎷🎺 샵↘빱↗‼️~뚜비두밥↘~두비두비뚜비두바↗압↘~ 🎻🎹🥁🎷🎺',
+      comment:
+        '앗 미안해!😉 저 친구는 운동에 미쳐있는 쁘론트엔드 개발자라서 내가 대신 이어서 소개할게!🧚‍♂️',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `안녕하세요~!! Mash-Up의 슈퍼🎖️스타 Web팀입니다!! 🌝
-      명불허전 자타공인 웹 장인들🧘‍♂️과 함께 성장하실 분을 찾습니다~!`,
+      comment:
+        '우리 로켓 웹팀은 성장에 미쳐있는 웹팀원들과 함께 세미나를 통한 개발 지식 공유, 엄청 딥하게 이어지는 테크톡, 웹 기술 관련 스터디 같은 여러 활동들을 진행 할 예정이야! 근성장..이 아닌 기술적 성장을 전적으로 추구하고 있는 팀이지!',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `웹팀에서는 세미나를 통한 개발 지식 공유부터 웹 기술과 관련된 스터디 및 블로깅, 타 플랫폼과 협업하여 진행하는 프로젝트, 서로의 고민과 견해를 나눌 수 있는 테크톡 등 다양한 활동들을 통해 꾸준한 성장을 추구하고 있습니다! 👀 💛🧡`,
+      comment:
+        '개발 말고도 같이 한강도 걷고🏃, 클라이밍도 하고🧗! 오래오래 개발하기 위해 건강💖도 같이 챙길 예정이야!',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `네트워킹에도 진심인 웹팀…🥺 다양한 컨퍼런스, 행사 같이 갈 친구도 이제 고민 걱정 NONO~ 🤫🛑 열정적인 사람들과 세상에서 제일 알찬 시간을 보낼 수 있는 기회!
-      Web is waiting for Y.O.U.`,
+      comment: '만약 너도 웹 개발 열정 뿜뿜!🚀 건강한 삶 뿜뿜!💪 이라면 지금 당장 지원하라구!',
     },
   ],
   [ANDROID]: [
