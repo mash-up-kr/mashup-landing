@@ -297,51 +297,38 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
   ],
   [IOS]: [
     {
-      side: 'start',
-      commentType: 'img',
-      comment: 'ios-1-min.gif',
-    },
-    {
-      side: 'start',
-      commentType: 'text',
-      comment: '우왕',
-    },
-    {
-      side: 'start',
-      commentType: 'img',
-      comment: 'ios-1-1-min.gif',
-    },
-    {
-      side: 'start',
-      commentType: 'text',
-      comment: '좌왕',
-    },
-    {
       side: 'end',
       commentType: 'img',
-      comment: 'ios-2-min.gif',
+      comment: 'ios1-min.jpg',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: '어서왕!!!!!!!!!',
+      comment: '딥다이브 레쭈고!!',
     },
-
+    {
+      side: 'start',
+      commentType: 'img',
+      comment: 'ios2-min.gif',
+    },
+    {
+      side: 'start',
+      commentType: 'text',
+      comment: '그게 뭔데…',
+    },
     {
       side: 'end',
       commentType: 'text',
-      comment: `🍎 맥북, 애플워치, 아이패드 등 애플 제품만보면 흥분하는 앱등이니?
-
+      comment: `🌊 iOS 딥다이브 해보고 싶은데 같이 할 사람이 필요하다구?
+      🍎 맥북, 애플워치, 아이패드 등 애플 제품만보면 흥분하는 앱등이니?
       🍺 다른 사람들과 개발 이야기 하고싶어서 드릉드릉하고 있니?
-
-      🥹 밤새면서 같이 애플 이벤트 볼 친구가 없니?
-
-      🤴 그렇다면 당장 iOS 팀으로 달려왕~~~`,
+      🥹 밤 새면서 같이 애플 이벤트 볼 친구가 없니?
+      🧜‍♀️ 그렇다면 당장 iOS 팀과 함께 숨참고 딥다이브~~~~`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: ` 🏰 iOS팀에서는 열정 넘치는 당신을 기다리고 있다궁 🏰`,
+      comment: 'iOS팀에서는 열정 넘치는 당신을 기다리고 있다궁~~~',
     },
     {
       side: 'end',
