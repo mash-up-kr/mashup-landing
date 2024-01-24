@@ -125,7 +125,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
   ],
   [NODE]: [
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
       comment: '설마 Node 팀 Next Time에 들어오려는건 아니지⁉️⁉️',
       profile: true,
@@ -134,33 +134,33 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       side: 'divide',
     },
     {
-      side: 'end',
+      side: 'start',
       commentType: 'img',
       comment: 'node1-min.png',
     },
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
       comment: `Ok...
       Next Time에 들어오면 자리 없다는건 인지하고 있지요?`,
     },
     {
-      side: 'end',
+      side: 'start',
       commentType: 'text',
       comment: '매쉬업 Node팀 PR 요청해서 Approve 받았어요.✅✅',
     },
     {
-      side: 'end',
+      side: 'start',
       commentType: 'img',
       comment: `node2-min.png`,
     },
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
       comment: '얼른 지원안하면 Approve 안해줄꺼에요⁉️⁉️',
     },
     {
-      side: 'start',
+      side: 'end',
       commentType: 'img',
       comment: 'node3-min.png',
     },
