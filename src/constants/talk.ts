@@ -76,48 +76,54 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
   ],
   [SPRING]: [
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
-      comment: `스프링팀은 어떤 팀인가요? 😮`,
-      profile: true,
-    },
-    {
-      side: 'divide',
+      comment: `🎙️치직,,,치지직,,,,
+      잘 들리나 오바,,,,`,
     },
     {
       side: 'end',
       commentType: 'img',
-      comment: 'spring-1-min.png',
+      comment: 'spring1-min.png',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: '안녕하세요 Mash-Up의 뜨거움 그자체, Spring 팀입니다🔥',
+      comment: `📢 여긴,,, 메시업 스프링 팀,,,, 스프링 팀이다,,,,
+      이,,, 무전을 들었다면,,,, 메시업 스프링 팀으로 오길 바란다,,,,`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `저희 스프링팀은 늘 기술적, 경험적 성장에 집중하고 있습니다.
-      ”모르는 것을 타파하기 위해, “새로운 것을 적용해보기 위해”, “나 뿐만이 아닌, 함께 성장하기 위해”,
-      이러한 열정을 Spring 팀에서는 프로젝트, 세미나, 스터디를 통하여 꾸준한 개발자로서의 성장을 추구하고 있습니다! 🌱`,
+      comment: '📡 학생부터 현직자까지,,, 모든 이들을 반기는 곳이다,,,,,',
+    },
+    {
+      side: 'end',
+      commentType: 'img',
+      comment: 'spring2-min.png',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `이처럼 열정 가득한 Spring팀이기 때문에
-      개발을 할 때도 진심모드,
-      놀 때도 노는 것에 대해 회식과 번개, 진심모드 ON! 💡`,
+      comment: `📣 온갖 기술이 존재하는 시대,,,, 자연스럽게 기술을 익혀갈 수 있는,,,, 그런 곳,,,,,
+        자신이 배운 것을 뽐내보고,,,,, 다른 사람들의 경험으로 부터 배우며,,,, 성장해 나갈 수 있는 곳,,,,`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment:
-        'Spring에 대한 열정을 가지고 함께의 성장을 아시는 분들이라면 저희와 함께 단체로 불태우는 것은 어떠신가요!?',
+      comment: `🎙️ 그렇다고 일만 하는 곳은 아니다,,,,
+      해커톤이 끝나도 더 놀고가는,,,, 새벽까지 파티를 즐기는,,,,
+      놀 때도 모든 힘을 다해 열심히 노는 사람들이지,,,,`,
+    },
+    {
+      side: 'end',
+      commentType: 'img',
+      comment: 'spring3-min.png',
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: '어여 지원하셔서 사람과 성장 모두 가져가세요🔥',
+      comment: '📢 그러니깐,,,, 방황하지 말고,,,, 내,,,,도도,,,,,도도독 (동료가 돼라)',
     },
   ],
   [NODE]: [
