@@ -130,7 +130,7 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'start',
       commentType: 'text',
-      comment: '🤔 Node.js 팀은 어떻게 진행되나요?',
+      comment: '설마 Node 팀 Next Time에 들어오려는건 아니지⁉️⁉️',
       profile: true,
     },
     {
@@ -138,44 +138,34 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     },
     {
       side: 'end',
+      commentType: 'img',
+      comment: 'node1-min.png',
+    },
+    {
+      side: 'start',
       commentType: 'text',
-      comment: '안녕하세요! Mash-Up의 막둥이팀 Node팀을 소개합니다!',
+      comment: `Ok...
+      Next Time에 들어오면 자리 없다는건 인지하고 있지요?`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: `첫 번째,  적극적으로⚔
-      빠르게 변화하고 있는 생태계에 적극적으로 뛰어들어 다양한 기술에 대해 경험해요🏇🚴‍♀️
-      `,
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `두 번째, Deep하게🥽
-      겉핥기 식 공부는 그만! 팀원들과의 소통과 코드리뷰로 실전에서도 써먹을 수 있는 Deep한 경험을 지향합니다🏄‍♂️🏄‍♀️`,
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `세 번째, 함께👨‍👩‍👧‍👦
-      개발은 혼자 해도 재밌지만 모여서 하면 더 재밌다구요~! 공유하는 문화로 함께 성장해나가요💪💪`,
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `Mash-Up과 함께 개발의 세계로 깊숙히 여행을 떠나실 NEW크루는 바로 당신!
-      지금 당장 JOIN US!`,
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `<strong>노</strong>@ 드팀과 함께 자
-      <strong>드</strong>@ 과자~`,
+      comment: '매쉬업 Node팀 PR 요청해서 Approve 받았어요.✅✅',
     },
     {
       side: 'end',
       commentType: 'img',
-      comment: 'node-1-min.png',
+      comment: `node2-min.png`,
+    },
+    {
+      side: 'start',
+      commentType: 'text',
+      comment: '얼른 지원안하면 Approve 안해줄꺼에요⁉️⁉️',
+    },
+    {
+      side: 'start',
+      commentType: 'img',
+      comment: 'node3-min.png',
     },
   ],
   [WEB]: [
@@ -273,12 +263,12 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'img',
-      comment: 'android3-min.png',
+      comment: 'android2-min.png',
     },
     {
       side: 'end',
       commentType: 'img',
-      comment: 'android2-min.png',
+      comment: 'android3-min.png',
     },
   ],
   [IOS]: [
