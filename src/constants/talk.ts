@@ -89,13 +89,13 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
     {
       side: 'end',
       commentType: 'text',
-      comment: `📢 여긴,,, 메시업 스프링 팀,,,, 스프링 팀이다,,,,
-      이,,, 무전을 들었다면,,,, 메시업 스프링 팀으로 오길 바란다,,,,`,
+      comment: `📢 여긴,,, 매쉬업 스프링 팀,,,, 스프링 팀이다,,,,
+      이,,, 무전을 들었다면,,,, 매쉬업 스프링 팀으로 오길 바란다,,,,`,
     },
     {
       side: 'end',
       commentType: 'text',
-      comment: '📡 학생부터 현직자까지,,, 모든 이들을 반기는 곳이다,,,,,',
+      comment: '📡 학생부터 현직자까지,,, 모든 이들을 반기는 곳이다,,,,,',
     },
     {
       side: 'end',
