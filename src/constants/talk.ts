@@ -228,50 +228,57 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
   ],
   [ANDROID]: [
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
-      comment: '🙂 Android팀은 어떻게 활동하나요?',
+      comment:
+        '🚨🚨🚨애애애애애앵‼️‼️‼️🚨🚨🚨📢📢📢긴급상황‼️‼️‼️긴급상황‼️‼️📢📢🔊🔊🔊‼️‼️‼️🔊🔊🔊🔊🔥🔥🔥🔥🛎🛎모두주목해주세요땡땡땡땡땡🛎🛎🛎🎤🎤아아-마이크테스트-!마이크테스트-!🎤🎤🎙🎙마이크테스트— 예비14기들린다면 응답하라—-🎙🎙📣📣 ',
       profile: true,
-    },
-    {
-      side: 'divide',
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `안녕하세요!☠️ (띠리띠리-) Mash-up의 지치지않는 로봇🤖들 안드로이드 팀입니다.🦾🦾`,
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `13기에 무엇을 할지 궁금하신가요~?~?😜
-
-      다양한 스터디, 모각코, 트렌디한 기술들을 통한 프로젝트 개발, 현업 개발자들과의 세미나까지!! 여러분들과 즐길 많은 활동들을 준비하고 있어요~❤️‍🔥🔥 (12기에는 컴포즈로 개발해 배포까지 성공했답니다 소곤소곤)
-
-      그뿐인가요~
-
-      저희 팀에는 클라이밍, 춤, 기타, 헬스 등 다양한 취미를 가진 숨은 고수들이 많아서 함께 취미를 공유하고 즐기면서 재미있는 추억도 쌓아가실 수 있어요! 😆 물론 여러분들의 취미도 함께 할 수 있구요! 😉`,
-    },
-    {
-      side: 'end',
-      commentType: 'text',
-      comment: `기술적으로 풀기 어려운 문제를 공유해 함께 토론하고 해결해보고 싶으신 분💪🏻
-
-      모든 팀 활동에 적극적으로! 열정적으로! 참여할 수 있으신 분🔥
-
-      다양한 취미 활동과 타팀과의 술자리를 통해 친목 도모까지 얻어가고싶으신 분 🧗‍♀️💃
-
-      지금 당장 지원하세요~ 기다릴게요! 🙋`,
-    },
-    {
-      side: 'end',
-      commentType: 'emoji',
-      comment: '🦾🤖🦿',
     },
     {
       side: 'end',
       commentType: 'img',
-      comment: 'android-1-min.png',
+      comment: 'android1-min.jpg',
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: '안녕하세요🙇🏻‍♀️ 저희는 열정 없이 못사는 안드로이드 팀입니다ㅎㅎ',
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: `대체 얼마나 열정적인지 궁금하시다구요!? 🔥 
+
+      안드로이드는 최대한 다양한 활동들을 함께하며 알찬 기수를 보냅니다! 다양한 스터디, 새로운 기술을 도전할 수 있는 프로젝트, 안드로이드 팀원들과 기술에 대해 깊이 있게 이야기 할 수 있는 세미나 등 아주 많은 활동들이 준비되어 있답니다!!`,
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment:
+        '저희 안둥이들은 취미 공유 활동 또한 진심인데요!  등산, 배드민턴, 클라이밍, 방탈출 등 다양한 취미를 공유하며 친해지고 소중한 추억까지 만들 수 있답니다🍀🍀',
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: `안드에 정말 진심이다!! 열정빼면 시체지!! 이신 분🙌🏻
+      14기 안드로이드 팀원들과 딥~하게 스터디 하고 싶으신 분🙌🏻
+      무엇보다 적극적으로 소통하고 활발히 참여할 수 있는 분🙌🏻
+      안둥이들과 활발한 네트워킹, 소중한 추억 쌓고싶으신 분🙌🏻`,
+    },
+    {
+      side: 'end',
+      commentType: 'text',
+      comment: '이라면 누구나 지원 가능합니다!  📢 I Say ~ 안드!! You Say ~~ 로이드!! 📢',
+    },
+    {
+      side: 'end',
+      commentType: 'img',
+      comment: 'android3-min.png',
+    },
+    {
+      side: 'end',
+      commentType: 'img',
+      comment: 'android2-min.png',
     },
   ],
   [IOS]: [
