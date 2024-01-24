@@ -21,35 +21,32 @@ export const TEAM_LIST = [PRODUCT_DESIGN, SPRING, NODE, WEB, ANDROID, IOS];
 export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
   [PRODUCT_DESIGN]: [
     {
-      side: 'start',
+      side: 'end',
       commentType: 'img',
       comment: 'design1-min.png',
     },
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
       comment: '그쪽도 프.디.팀을 아세요~??',
-      profile: true,
     },
 
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
       comment: '안녕하세요 💖Mash-Up 공식 공주와 왕자들, 프로덕트 디자인팀💖이에요',
     },
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
-      comment: 'mash-up은 👑 프디팀 👑 과 🤖다른 팀들🤖로 구성되어 있다고 할 수 있어용~!!',
-    },
-    {
-      side: 'start',
-      commentType: 'text',
-      comment: `🔥최 . 강 . 프 . 디🔥
+      comment: `mash-up은 👑 프디팀 👑 과 🤖다른 팀들🤖로 구성되어 있다고 할 수 있어용~!!
+
+      🔥최 . 강 . 프 . 디🔥
+
       서비스 기획부터 문제 정의, 가설 설정, 솔루션 도출, 검증까지 프로덕트의 전체 사이클을 경험할 수 있어요.`,
     },
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
       comment: `저희 프디팀은 기수내 프로젝트를 주도적으로 진행하며 함께 성장하실 분들을 기다리고 있습니다.
 
@@ -58,18 +55,18 @@ export const TEAM_TALK_LIST: { [key: string]: TalkItem[] } = {
       - 반짝이는 아이디어를 생각에서 그치는 것이 아니라, 세상에 출시해 보고싶다면!`,
     },
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
       comment:
         '프로젝트도 하고, 스터디도 하고, 페스티벌, 전시회 가기 등 문화생활까지 함께 즐거운 추억 쌓아보아요!!',
     },
     {
-      side: 'start',
+      side: 'end',
       commentType: 'text',
       comment: '나다 싶으면 지원을 해.야.지🌸',
     },
     {
-      side: 'start',
+      side: 'end',
       commentType: 'img',
       comment: 'design2-min.png',
     },
