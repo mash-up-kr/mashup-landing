@@ -29,7 +29,7 @@ const FOOTER_ITEMS = [
   },
   {
     name: '매쉬업 인스타그램',
-    url: 'https://www.instagram.com/branding_mashup_/',
+    url: 'https://www.instagram.com/official_mashup_/',
     icon: IC_INSTA,
   },
 ];
@@ -44,7 +44,7 @@ const Footer = () => (
         </a>
       ))}
     </div>
-    <p className={S.Description}>© Mash-Up. 2023 All rights reserved</p>
+    <p className={S.Description}>© Mash-Up. 2024 All rights reserved</p>
   </footer>
 );
 
